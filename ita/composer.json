@@ -1,0 +1,78 @@
+{
+	"name": "johnpbloch/wordpress",
+	"description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+	"keywords": [
+		"wordpress",
+		"blog",
+		"cms"
+	],
+	"type": "package",
+	"homepage": "http://wordpress.org/",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "WordPress Community",
+			"homepage": "http://wordpress.org/about/"
+		}
+	],
+	"support": {
+		"issues": "http://core.trac.wordpress.org/",
+		"forum": "http://wordpress.org/support/",
+		"wiki": "http://codex.wordpress.org/",
+		"irc": "irc://irc.freenode.net/wordpress",
+		"source": "http://core.trac.wordpress.org/browser"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	],
+	"require": {
+		"php": ">=7.3",
+		"johnpbloch/wordpress-core-installer": "^2.0",
+		"johnpbloch/wordpress-core": "^5.4.1",
+		"platformsh/config-reader": "^2.3",
+		"wpackagist-theme/lovecraft": "2.0.1",
+		"wpackagist-plugin/akismet": "^4.1.6",
+		"wpackagist-plugin/jetpack": "^9.0.1",
+		"wpackagist-plugin/really-simple-ssl": "^5.0.7",
+		"wpackagist-plugin/wordpress-importer": "^0.7",
+		"wpackagist-plugin/academic-bloggers-toolkit": "^5.2.2",
+		"wpackagist-plugin/contextual-category-widget": "^0.6.1",
+		"wpackagist-plugin/social-pug": "^1.7.0",
+		"wpackagist-plugin/series": "^2.0.1",
+		"wpackagist-plugin/wpforms-lite": "^1.6.0.2",
+		"wpackagist-plugin/wp-cloudflare-page-cache": "4.5.5",
+		"wpackagist-plugin/redis-cache": "^2.0.2",
+		"wpackagist-plugin/elasticpress": "^3.4.1",
+		"inpsyde/wp-translation-downloader": "^2.0"
+	},
+	"scripts": {
+		"postbuild": [
+			"mv wp-config.php wordpress/",
+			"mv wordpress/wp-content/plugins/redis-cache/includes/object-cache.php wordpress/wp-content/",
+			"rm -rf wordpress/wp-content/themes/twenty*"
+		],
+		"post-install-cmd": "@postbuild"
+	},
+	"extra": {
+		"installer-paths": {
+			"wordpress/wp-content/plugins/{$name}": [
+				"type:wordpress-plugin"
+			],
+			"wordpress/wp-content/themes/{$name}": [
+				"type:wordpress-theme"
+			],
+			"wordpress/wp-content/mu-plugins/{$name}": [
+				"type:wordpress-muplugin"
+			]
+		},
+		"wp-translation-downloader": {
+			"languages": [
+				"it_IT"
+			],
+			"directory": "wordpress/wp-content/languages"
+		}
+	}
+}

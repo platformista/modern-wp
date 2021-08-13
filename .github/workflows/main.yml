@@ -1,0 +1,27 @@
+# This is a basic workflow to help you get started with Actions
+
+# name: CI
+
+# on:
+#   schedule:
+#   - cron:  '0 4 * * *'
+
+# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# jobs:
+#   # This workflow contains a single job called "bxuild"
+#   backup:
+#     name: Perform Backup for Artetecha WP sites
+#     # The type of runner that the job will run on
+#     runs-on: ubuntu-latest
+
+#     # Steps represent a sequence of tasks that will be executed as part of the job
+#     steps:
+#       - uses: actions/checkout@v2.2.0
+#       - name: Install Platform.sh CLI
+#         run: |
+#           curl -sS https://platform.sh/cli/installer | php
+#           echo "/home/runner/.platformsh/bin" >> $GITHUB_PATH
+#       - name: Backup Project Artetecha
+#         run: platform backup:create -W -p ${{secrets.PSH_PROJECT_ARTETECHA}} master
+#         env:
+#           PLATFORMSH_CLI_TOKEN: ${{secrets.PLATFORMSH_CLI_TOKEN}}

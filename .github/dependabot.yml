@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: composer
+  directory: "/neminis"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: wpackagist-plugin/really-simple-ssl
+    versions:
+    - 4.0.10
+- package-ecosystem: composer
+  directory: "/pg"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10

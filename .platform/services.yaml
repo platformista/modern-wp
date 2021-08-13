@@ -1,0 +1,19 @@
+# The services of the project.
+#
+# Each service listed will be deployed
+# to power your Platform.sh project.
+
+neminisdb:
+  type: mariadb:10.4
+  disk: 512
+
+pgdb:
+  type: mariadb:10.4
+  disk: 512
+
+redis:
+  type: redis:5.0
+
+es:
+  type: elasticsearch:7.2
+  disk: 256
