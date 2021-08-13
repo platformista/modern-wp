@@ -284,15 +284,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "4.1.9",
+            "version": "4.1.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/4.1.9"
+                "reference": "tags/4.1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.10.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -320,15 +320,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "9.8.1",
+            "version": "9.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/9.8.1"
+                "reference": "tags/9.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.9.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.9.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
