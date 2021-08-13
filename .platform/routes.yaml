@@ -2,9 +2,9 @@
 # Each route describes how an incoming URL is going
 # to be processed by Platform.sh.
 
-"https://www.neminis.org/":
+"https://www.eng.org/":
   type: upstream
-  upstream: "neminis:http"
+  upstream: "eng:http"
   cache:
     enabled: true
     # Base the cache on the session cookies. Ignore all other cookies.
@@ -15,13 +15,13 @@
       - "/^wp-settings-/"
       - "/^wp-postpass/"
 
-"https://neminis.org/":
+"https://eng.org/":
   type: redirect
-  to: "https://www.neminis.org/"
+  to: "https://www.eng.org/"
 
-"https://www.pergrazia.com/":
+"https://www.ita.com/":
   type: upstream
-  upstream: "pg:http"
+  upstream: "ita:http"
   cache:
     enabled: true
     # Base the cache on the session cookies. Ignore all other cookies.
@@ -32,6 +32,6 @@
       - "/^wp-settings-/"
       - "/^wp-postpass/"
 
-"https://pergrazia.com/":
+"https://ita.com/":
   type: redirect
-  to: "https://www.pergrazia.com/"
+  to: "https://www.ita.com/"
