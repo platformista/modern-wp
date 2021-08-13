@@ -476,15 +476,15 @@
         },
         {
             "name": "wpackagist-plugin/social-pug",
-            "version": "1.18.2",
+            "version": "1.19.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/social-pug/",
-                "reference": "tags/1.18.2"
+                "reference": "tags/1.19.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/social-pug.1.18.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/social-pug.1.19.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
