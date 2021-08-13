@@ -58,7 +58,7 @@ web:
 disk: 512
 dependencies:
   php:
-    wp-cli/wp-cli: "^2.2.0"
+    wp-cli/wp-cli-bundle: "^2.5.0"
     psy/psysh: "^0.8.4"
 
 # The mounts that will be performed when the package is deployed.
