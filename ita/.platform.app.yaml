@@ -2,7 +2,7 @@
 # in the same project.
 
 # The name of this app. Must be unique within a project.
-name: pg
+name: ita
 
 # The runtime the application uses.
 type: 'php:7.4'
@@ -21,7 +21,7 @@ hooks:
 # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
 # side is in the form `<service name>:<endpoint name>`.
 relationships:
-  database: 'pgdb:mysql'
+  database: 'itadb:mysql'
   rediscache: 'redis:redis'
   essearch: 'es:elasticsearch'
 
