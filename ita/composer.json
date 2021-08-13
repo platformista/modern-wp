@@ -35,7 +35,7 @@
 		"platformsh/config-reader": "^2.3",
 		"wpackagist-theme/lovecraft": "2.0.1",
 		"wpackagist-plugin/akismet": "^4.1.6",
-		"wpackagist-plugin/jetpack": "^9.0.1",
+		"wpackagist-plugin/jetpack": "^10.0",
 		"wpackagist-plugin/really-simple-ssl": "^5.0.7",
 		"wpackagist-plugin/wordpress-importer": "^0.7",
 		"wpackagist-plugin/academic-bloggers-toolkit": "^5.2.2",
