@@ -12,7 +12,7 @@ build:
   flavor: composer
 
 hooks:
-  build: |
+  deploy: |
     set -e
     bash setup.sh
 
