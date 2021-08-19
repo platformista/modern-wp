@@ -44,7 +44,14 @@
 	},
 	"distro": {
 		"default-theme": "wilson",
-		"enable-plugins": "all"
+		"enable-plugins": [
+			"akismet",
+			"dynamic-to-top",
+			"jetpack",
+			"really-simple-ssl",
+			"wp-cloudflare-page-cache",
+			"wp-search-with-algolia"
+		]
 	},
 	"scripts": {
 		"postbuild": [
