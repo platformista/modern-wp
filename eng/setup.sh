@@ -11,6 +11,6 @@ if ! wp core is-installed; then
 	while read PLUGIN; do
 		wp plugin activate ${PLUGIN}
 	done
+else
+	wp core update-db
 fi
-
-wp core update-db
