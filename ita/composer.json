@@ -48,11 +48,28 @@
 		"wpackagist-plugin/elasticpress": "^3.4.1",
 		"inpsyde/wp-translation-downloader": "^2.0"
 	},
+	"distro": {
+		"default-theme": "lovecraft",
+		"enable-plugins": [
+			"academic-bloggers-toolkit",
+			"akismet",
+			"contextual-category-widget",
+			"elasticpress",
+			"jetpack",
+			"really-simple-ssl",
+			"redis-cache",
+			"series",
+			"social-pug",
+			"wp-cloudflare-page-cache",
+			"wpforms-lite"
+		]
+	},
 	"scripts": {
 		"postbuild": [
 			"mv wp-config.php wordpress/",
 			"mv wordpress/wp-content/plugins/redis-cache/includes/object-cache.php wordpress/wp-content/",
-			"rm -rf wordpress/wp-content/themes/twenty*"
+			"rm -rf wordpress/wp-content/themes/twenty*",
+			"rm -rf wordpress/wp-content/themes/hello.php"
 		],
 		"post-install-cmd": "@postbuild"
 	},
