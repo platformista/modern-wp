@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-cd wordpress
+redis-cli -h rediscache.internal FLUSHALL
 
+cd wordpress
 if ! wp core is-installed; then
 	WP_URL=$(echo $PLATFORM_ROUTES  | base64 --decode | jq -r 'keys[]' | grep $PLATFORM_APPLICATION_NAME | grep https | grep www)
 	wp core install --url="${WP_URL}" --title="Modern WordPress" --admin_user=admin --admin_password=changeme --admin_email=change@me.com
