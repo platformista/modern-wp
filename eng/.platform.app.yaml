@@ -14,7 +14,7 @@ build:
 hooks:
   deploy: |
     set -e
-    bash setup.sh
+    bash scripts/deploy.sh
 
 # The relationships of the application with services or other applications.
 # The left-hand side is the name of the relationship as it will be exposed
