@@ -14,12 +14,12 @@ This repository hosts the codebase for two sites, both
 
 In addition to the above:
 
-- the `pg` site uses [Elasticsearch](https://www.elastic.co/elasticsearch/)
-- the `neminis` site uses [Algolia](https://www.algolia.com)
+- the `ita` site uses [Elasticsearch](https://www.elastic.co/elasticsearch/)
+- the `eng` site uses [Algolia](https://www.algolia.com)
 
 ## WordPress
 
-WordPress remains by far the CMS that is easiest to adopt, and that provides a fast time to market in the majority of use cases. There is so much high quality stuff out there for WordPress, be it OSS or Premium, that one can have beautiful sites powered by an easy-to-use CMS up and running in no time. 
+WordPress remains by far the CMS that is easiest to adopt, and that provides a fast time to market in the majority of use cases. There is so much high quality stuff out there for WordPress, be it OSS or Premium, that one can have beautiful sites powered by an easy-to-use CMS up and running in no time.
 
 ## Platform.sh
 
@@ -50,9 +50,9 @@ One of the sites is not in English and uses translation files for WordPress core
 
 ## GitHub Actions
 
-It seemed like the obvious choice. Currently no particular CI/CD task is implemented, as Platform.sh provide their own built-in CI/CD for builds and deployments. Moreover, I do not require particular testing at present, so I am not using Actions for that either. However, I am using it as Cron Scheduler, to perform regular tasks on my Platform.sh project. 
+It seemed like the obvious choice. Currently no particular CI/CD task is implemented, as Platform.sh provide their own built-in CI/CD for builds and deployments. Moreover, I do not require particular testing at present, so I am not using Actions for that either. However, I am using it as Cron Scheduler, to perform regular tasks on my Platform.sh project.
 
-Although Platform.sh allow you to do that by defining Cron Jobs [on their own platform](https://docs.platform.sh/configuration/app/cron.html), I chose to have this functionality decoupled from Platform.sh. 
+Although Platform.sh allow you to do that by defining Cron Jobs [on their own platform](https://docs.platform.sh/configuration/app/cron.html), I chose to have this functionality decoupled from Platform.sh.
 
 ## Elasticsearch
 
@@ -62,4 +62,4 @@ Although Platform.sh allow you to do that by defining Cron Jobs [on their own pl
 
 [Algolia](https://www.algolia.com/doc/faq/why/what-makes-algolia-different-than-elasticsearch-or-solr/) is a commercial service similar to ElasticSearch or Solr, but that claims to be up to 200x faster than Elasticsearch. There is a [free plan](https://www.algolia.com/pricing) that is definitely suitable for small sites. Algolia [no longer maintains an official WordPress plugin](https://www.algolia.com/doc/integration/wordpress/indexing/setting-up-algolia/) but their former official plugin was forked and it is now known as [WP Search with Algolia](https://wordpress.org/plugins/wp-search-with-algolia/). It is actively maintained and works well as far as we have been able to ascertain.
 
-<a href="https://console.platform.sh/projects/create-project/?template=https://github.com/artetecha/artetecha-platform/blob/master/template-definition.yaml&utm_campaign=deploy_on_platform?utm_medium=button&utm_source=affiliate_links&utm_content=https://github.com/artetecha/artetecha-platform/blob/master/template-definition.yaml" target="_blank" title="Deploy with Platform.sh"><img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg"></a>
+<a href="https://console.platform.sh/projects/create-project/?template=https://github.com/vincenzo/modern-wp/blob/master/template-definition.yaml&utm_campaign=deploy_on_platform?utm_medium=button&utm_source=affiliate_links&utm_content=https://github.com/vincenzo/modern-wp/blob/master/template-definition.yaml" target="_blank" title="Deploy with Platform.sh"><img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg"></a>
