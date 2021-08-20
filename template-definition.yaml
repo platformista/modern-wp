@@ -19,9 +19,9 @@ info:
     # Unique machine name, prefaced by a vendor or organization identifier.
     # The vendor should be the lowercase name of your company, organization, or project, and the project name
     # the lowercase name of the template. This may be the same as the vendor in a single-product case.
-    id: artetecha/artetecha-wp
+    id: vincenzo/modern-wp
     # The human-readable name of the template.  This is how the template will be named in the user interface.
-    name: A modern WordPress development workflow
+    name: Modern WordPress development
     # Human-readable descriptive text for the template. Supports limited HTML.
     # This field should be 1-3 sentences describing how the project is setup, assuming the reader already knows what
     # the application is.
@@ -51,7 +51,7 @@ info:
 # this key also gets mapped to the appropriate location in project.settings so
 # that the current UI can have its own workflow overridden as well.
 initialize:
-    repository: git://github.com/artetecha/artetecha-platform.git@master
+    repository: git://github.com/vincenzo/modern-wp.git@master
     config: null
     files: []
     profile: PHP
