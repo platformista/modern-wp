@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# The install will fail without this.
 redis-cli -h rediscache.internal FLUSHALL
 
 cd wordpress
