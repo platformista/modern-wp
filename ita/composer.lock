@@ -343,25 +343,25 @@
                 "url": "https://downloads.wordpress.org/plugin/academic-bloggers-toolkit.5.2.2.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/academic-bloggers-toolkit/"
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "4.1.11",
+            "version": "4.1.12",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/4.1.11"
+                "reference": "tags/4.1.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.11.zip"
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.12.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/"
@@ -379,7 +379,7 @@
                 "url": "https://downloads.wordpress.org/plugin/contextual-category-widget.0.6.1.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contextual-category-widget/"
@@ -397,7 +397,7 @@
                 "url": "https://downloads.wordpress.org/plugin/elasticpress.3.6.2.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/elasticpress/"
@@ -415,7 +415,7 @@
                 "url": "https://downloads.wordpress.org/plugin/jetpack.10.0.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/jetpack/"
@@ -433,7 +433,7 @@
                 "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.5.0.10.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/really-simple-ssl/"
@@ -451,7 +451,7 @@
                 "url": "https://downloads.wordpress.org/plugin/redis-cache.2.0.18.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/redis-cache/"
@@ -469,7 +469,7 @@
                 "url": "https://downloads.wordpress.org/plugin/series.2.0.1.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/series/"
@@ -487,7 +487,7 @@
                 "url": "https://downloads.wordpress.org/plugin/social-pug.1.18.2.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/social-pug/"
@@ -505,7 +505,7 @@
                 "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.7.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
@@ -523,7 +523,7 @@
                 "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.4.5.5.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-cloudflare-page-cache/"
@@ -541,7 +541,7 @@
                 "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.6.9.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wpforms-lite/"
@@ -559,7 +559,7 @@
                 "url": "https://downloads.wordpress.org/theme/lovecraft.2.0.1.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/lovecraft/"
