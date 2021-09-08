@@ -36,7 +36,7 @@
 		"wpackagist-theme/wilson": "^2.0",
 		"wpackagist-plugin/akismet": "^4.1.6",
 		"wpackagist-plugin/dynamic-to-top": "^3.5.2",
-		"wpackagist-plugin/jetpack": "^9.0.1",
+		"wpackagist-plugin/jetpack": "^10.1",
 		"wpackagist-plugin/really-simple-ssl": "^5.0.7",
 		"wpackagist-plugin/wp-cloudflare-page-cache": "4.5.5",
 		"wpackagist-plugin/wp-search-with-algolia": "^1.3",
