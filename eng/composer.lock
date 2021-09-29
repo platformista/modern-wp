@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "5a546a8cc4607f38cfbd8e20b3de234e45b2110f"
+                "reference": "a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/5a546a8cc4607f38cfbd8e20b3de234e45b2110f",
-                "reference": "5a546a8cc4607f38cfbd8e20b3de234e45b2110f",
+                "url": "https://api.github.com/repos/composer/installers/zipball/a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8",
+                "reference": "a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8",
                 "shasum": ""
             },
             "require": {
@@ -143,7 +143,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-04T13:56:36+00:00"
+            "time": "2021-09-13T08:21:20+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
@@ -331,15 +331,15 @@
         },
         {
             "name": "wpackagist-plugin/really-simple-ssl",
-            "version": "5.1.0",
+            "version": "5.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/really-simple-ssl/",
-                "reference": "tags/5.1.0"
+                "reference": "tags/5.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.5.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.5.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
