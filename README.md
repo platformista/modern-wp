@@ -35,7 +35,7 @@ Now part of the GitHub family, it provides a free plan for public repositories, 
 
 ## Mergify
 
-This service, too, provides a free plan for public repositories. Youn can configure it with a number of conditions that, when met, will trigger an automatic merge of your pull requests.
+This service, too, provides a free plan for public repositories. You can configure it with a number of conditions that, when met, will trigger an automatic merge of your pull requests.
 
 ## Redis
 
