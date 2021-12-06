@@ -17,6 +17,8 @@ hooks:
     bash scripts/install-redis.sh 5.1.1
   deploy: |
     set -e
+    # The install will fail without this.
+    redis-cli -h rediscache.internal FLUSHALL
     bash scripts/deploy.sh
 
 # The relationships of the application with services or other applications.
