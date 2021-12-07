@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# The install will fail without this.
-redis-cli -h rediscache.internal FLUSHALL
-
 cd wordpress
 if ! wp core is-installed; then
 	WP_URL=$(echo $PLATFORM_ROUTES  | base64 --decode | jq -r 'keys[]' | grep $PLATFORM_APPLICATION_NAME | grep https | grep www)
@@ -15,4 +12,8 @@ if ! wp core is-installed; then
 	done
 else
 	wp core update-db
+fi
+
+if [ "$PLATFORM_BRANCH" != "master" ]; then
+	wp plugin deactivate jetpack
 fi
