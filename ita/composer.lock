@@ -387,15 +387,15 @@
         },
         {
             "name": "wpackagist-plugin/elasticpress",
-            "version": "3.6.5",
+            "version": "3.6.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/elasticpress/",
-                "reference": "tags/3.6.5"
+                "reference": "tags/3.6.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elasticpress.3.6.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/elasticpress.3.6.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -405,15 +405,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "10.3",
+            "version": "10.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/10.3"
+                "reference": "tags/10.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.10.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.10.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -477,15 +477,15 @@
         },
         {
             "name": "wpackagist-plugin/social-pug",
-            "version": "1.18.2",
+            "version": "1.19.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/social-pug/",
-                "reference": "tags/1.18.2"
+                "reference": "tags/1.19.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/social-pug.1.18.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/social-pug.1.19.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

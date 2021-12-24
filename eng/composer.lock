@@ -313,15 +313,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "10.3",
+            "version": "10.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/10.3"
+                "reference": "tags/10.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.10.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.10.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -331,15 +331,15 @@
         },
         {
             "name": "wpackagist-plugin/really-simple-ssl",
-            "version": "5.2.0",
+            "version": "5.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/really-simple-ssl/",
-                "reference": "tags/5.2.0"
+                "reference": "tags/5.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.5.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.5.2.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
