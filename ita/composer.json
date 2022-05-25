@@ -31,7 +31,7 @@
 	"require": {
 		"php": ">=7.3",
 		"johnpbloch/wordpress-core-installer": "^2.0",
-		"johnpbloch/wordpress-core": "^5.4.1",
+		"johnpbloch/wordpress-core": "^6.0.0",
 		"platformsh/config-reader": "^2.3",
 		"wpackagist-theme/lovecraft": "2.0.1",
 		"wpackagist-plugin/akismet": "^4.1.6",
