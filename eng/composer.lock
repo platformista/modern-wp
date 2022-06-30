@@ -404,15 +404,15 @@
         },
         {
             "name": "wpackagist-theme/wilson",
-            "version": "2.0.0",
+            "version": "2.1",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/wilson/",
-                "reference": "2.0.0"
+                "reference": "2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/wilson.2.0.0.zip"
+                "url": "https://downloads.wordpress.org/theme/wilson.2.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
