@@ -34,7 +34,7 @@
 		"johnpbloch/wordpress-core": "^6.0.0",
 		"platformsh/config-reader": "^2.3",
 		"wpackagist-theme/lovecraft": "2.1.1",
-		"wpackagist-plugin/akismet": "^4.1.6",
+		"wpackagist-plugin/akismet": "^5.0",
 		"wpackagist-plugin/jetpack": "^11.0",
 		"wpackagist-plugin/really-simple-ssl": "^5.0.7",
 		"wpackagist-plugin/wordpress-importer": "^0.7",
