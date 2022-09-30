@@ -37,7 +37,7 @@
 		"wpackagist-plugin/akismet": "^5.0",
 		"wpackagist-plugin/jetpack": "^11.0",
 		"wpackagist-plugin/really-simple-ssl": "^5.0.7",
-		"wpackagist-plugin/wordpress-importer": "^0.7",
+		"wpackagist-plugin/wordpress-importer": "^0.8",
 		"wpackagist-plugin/academic-bloggers-toolkit": "^5.2.2",
 		"wpackagist-plugin/contextual-category-widget": "^0.6.1",
 		"wpackagist-plugin/social-pug": "^1.7.0",
