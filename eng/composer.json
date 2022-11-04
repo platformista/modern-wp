@@ -37,7 +37,7 @@
 		"wpackagist-plugin/akismet": "^5.0",
 		"wpackagist-plugin/dynamic-to-top": "^3.5.2",
 		"wpackagist-plugin/jetpack": "^11.0",
-		"wpackagist-plugin/really-simple-ssl": "^5.0.7",
+		"wpackagist-plugin/really-simple-ssl": "^6.0.3",
 		"wpackagist-plugin/wp-cloudflare-page-cache": "4.6.1",
 		"wpackagist-plugin/wp-search-with-algolia": "^2.1",
 		"wpackagist-plugin/wordpress-importer": "^0.8"
