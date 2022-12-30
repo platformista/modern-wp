@@ -4,20 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a62d6932fd84161781d3300fef5b1b5",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v2.0.1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8"
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8",
-                "reference": "a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8",
+                "url": "https://api.github.com/repos/composer/installers/zipball/c29dc4b93137acb82734f672c37e029dfbd95b35",
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +36,8 @@
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-main": "2.x-dev"
-                }
+                },
+                "plugin-modifies-install-path": true
             },
             "autoload": {
                 "psr-4": {
@@ -104,6 +104,7 @@
                 "magento",
                 "majima",
                 "mako",
+                "matomo",
                 "mediawiki",
                 "miaoxing",
                 "modulework",
@@ -143,20 +144,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-13T08:21:20+00:00"
+            "time": "2022-08-20T06:45:11+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.9.0",
+            "version": "6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "51241ed9138dd1fb552f6b85fc2025e6135fc03f"
+                "reference": "c9688597721b8579f3c29028e572a7b9753db893"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/51241ed9138dd1fb552f6b85fc2025e6135fc03f",
-                "reference": "51241ed9138dd1fb552f6b85fc2025e6135fc03f",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/c9688597721b8579f3c29028e572a7b9753db893",
+                "reference": "c9688597721b8579f3c29028e572a7b9753db893",
                 "shasum": ""
             },
             "require": {
@@ -164,7 +165,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.9.0"
+                "wordpress/core-implementation": "6.1.1"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -184,7 +185,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2022-01-25T20:28:49+00:00"
+            "time": "2022-11-15T19:11:58+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -277,15 +278,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "4.2.2",
+            "version": "5.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/4.2.2"
+                "reference": "tags/5.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.2.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/akismet.5.0.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -313,15 +314,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "10.6",
+            "version": "11.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/10.6"
+                "reference": "tags/11.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.10.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.11.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -331,15 +332,15 @@
         },
         {
             "name": "wpackagist-plugin/really-simple-ssl",
-            "version": "5.2.3",
+            "version": "6.0.14",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/really-simple-ssl/",
-                "reference": "tags/5.2.3"
+                "reference": "tags/6.0.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.5.2.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.6.0.14.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -367,15 +368,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",
-            "version": "0.7",
+            "version": "0.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-importer/",
-                "reference": "tags/0.7"
+                "reference": "tags/0.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.8.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -385,15 +386,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-cloudflare-page-cache",
-            "version": "4.5.8",
+            "version": "4.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-cloudflare-page-cache/",
-                "reference": "tags/4.5.8"
+                "reference": "tags/4.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.4.5.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.4.7.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -403,15 +404,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-search-with-algolia",
-            "version": "2.1.0",
+            "version": "2.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-search-with-algolia/",
-                "reference": "tags/2.1.0"
+                "reference": "tags/2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.2.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.2.3.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -421,15 +422,15 @@
         },
         {
             "name": "wpackagist-theme/wilson",
-            "version": "2.0.0",
+            "version": "2.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/wilson/",
-                "reference": "2.0.0"
+                "reference": "2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/wilson.2.0.0.zip"
+                "url": "https://downloads.wordpress.org/theme/wilson.2.1.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
