@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7ad1154b523d0bbbd21b144e643fbd6",
+    "content-hash": "6a62d6932fd84161781d3300fef5b1b5",
     "packages": [
         {
             "name": "composer/installers",
@@ -348,6 +348,24 @@
             "homepage": "https://wordpress.org/plugins/really-simple-ssl/"
         },
         {
+            "name": "wpackagist-plugin/web-stories",
+            "version": "1.28.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/web-stories/",
+                "reference": "tags/1.28.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/web-stories.1.28.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/web-stories/"
+        },
+        {
             "name": "wpackagist-plugin/wordpress-importer",
             "version": "0.7",
             "source": {
@@ -430,5 +448,5 @@
         "php": ">=7.3"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.3.0"
 }

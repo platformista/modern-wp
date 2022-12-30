@@ -40,7 +40,8 @@
 		"wpackagist-plugin/really-simple-ssl": "^5.0.7",
 		"wpackagist-plugin/wp-cloudflare-page-cache": "4.5.8",
 		"wpackagist-plugin/wp-search-with-algolia": "^2.1",
-		"wpackagist-plugin/wordpress-importer": "^0.7"
+		"wpackagist-plugin/wordpress-importer": "^0.7",
+		"wpackagist-plugin/web-stories": "^1.28"
 	},
 	"distro": {
 		"default-theme": "wilson",
@@ -72,6 +73,12 @@
 			"wordpress/wp-content/mu-plugins/{$name}": [
 				"type:wordpress-muplugin"
 			]
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"johnpbloch/wordpress-core-installer": true,
+			"composer/installers": true
 		}
 	}
 }
