@@ -437,15 +437,15 @@
         },
         {
             "name": "wpackagist-plugin/redis-cache",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redis-cache/",
-                "reference": "tags/2.2.3"
+                "reference": "tags/2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redis-cache.2.2.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/redis-cache.2.2.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
