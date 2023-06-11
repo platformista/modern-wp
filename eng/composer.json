@@ -1,77 +1,81 @@
 {
-	"name": "johnpbloch/wordpress",
-	"description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
-	"keywords": [
-		"wordpress",
-		"blog",
-		"cms"
-	],
-	"type": "package",
-	"homepage": "http://wordpress.org/",
-	"license": "GPL-2.0+",
-	"authors": [
-		{
-			"name": "WordPress Community",
-			"homepage": "http://wordpress.org/about/"
-		}
-	],
-	"support": {
-		"issues": "http://core.trac.wordpress.org/",
-		"forum": "http://wordpress.org/support/",
-		"wiki": "http://codex.wordpress.org/",
-		"irc": "irc://irc.freenode.net/wordpress",
-		"source": "http://core.trac.wordpress.org/browser"
-	},
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://wpackagist.org"
-		}
-	],
-	"require": {
-		"php": ">=7.3",
-		"johnpbloch/wordpress-core-installer": "^2.0",
-		"johnpbloch/wordpress-core": "^6.0.0",
-		"platformsh/config-reader": "^2.3",
-		"wpackagist-theme/wilson": "^2.0",
-		"wpackagist-plugin/akismet": "^5.0",
-		"wpackagist-plugin/dynamic-to-top": "^3.5.2",
-		"wpackagist-plugin/jetpack": "^12.0",
-		"wpackagist-plugin/really-simple-ssl": "^7.0.1",
-		"wpackagist-plugin/wp-cloudflare-page-cache": "4.7.5",
-		"wpackagist-plugin/wp-search-with-algolia": "^2.1",
-		"wpackagist-plugin/wordpress-importer": "^0.8"
-	},
-	"distro": {
-		"default-theme": "wilson",
-		"enable-plugins": [
-			"akismet",
-			"dynamic-to-top",
-			"jetpack",
-			"really-simple-ssl",
-			"wp-cloudflare-page-cache",
-			"wp-search-with-algolia"
-		]
-	},
-	"scripts": {
-		"postbuild": [
-			"mv wp-config.php wordpress/",
-			"rm -rf wordpress/wp-content/themes/twenty*",
-			"rm -rf wordpress/wp-content/themes/hello.php"
-		],
-		"post-install-cmd": "@postbuild"
-	},
-	"extra": {
-		"installer-paths": {
-			"wordpress/wp-content/plugins/{$name}": [
-				"type:wordpress-plugin"
-			],
-			"wordpress/wp-content/themes/{$name}": [
-				"type:wordpress-theme"
-			],
-			"wordpress/wp-content/mu-plugins/{$name}": [
-				"type:wordpress-muplugin"
-			]
-		}
+  "name": "johnpbloch/wordpress",
+  "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+  "keywords": [
+	"wordpress",
+	"blog",
+	"cms"
+  ],
+  "type": "package",
+  "homepage": "http://wordpress.org/",
+  "license": "GPL-2.0+",
+  "authors": [
+	{
+	  "name": "WordPress Community",
+	  "homepage": "http://wordpress.org/about/"
 	}
+  ],
+  "support": {
+	"issues": "http://core.trac.wordpress.org/",
+	"forum": "http://wordpress.org/support/",
+	"wiki": "http://codex.wordpress.org/",
+	"irc": "irc://irc.freenode.net/wordpress",
+	"source": "http://core.trac.wordpress.org/browser"
+  },
+  "repositories": [
+	{
+	  "type": "composer",
+	  "url": "https://wpackagist.org"
+	}
+  ],
+  "require": {
+	"php": ">=7.3",
+	"johnpbloch/wordpress-core-installer": "^2.0",
+	"johnpbloch/wordpress-core": "^6.0.0",
+	"platformsh/config-reader": "^2.3",
+	"wpackagist-theme/wilson": "^2.0",
+	"wpackagist-plugin/akismet": "^5.0",
+	"wpackagist-plugin/jetpack": "^12.0",
+	"wpackagist-plugin/really-simple-ssl": "^7.0.1",
+	"wpackagist-plugin/wp-cloudflare-page-cache": "4.7.2",
+	"wpackagist-plugin/wp-search-with-algolia": "^2.1",
+	"wpackagist-plugin/wordpress-importer": "^0.8"
+  },
+  "distro": {
+	"default-theme": "wilson",
+	"enable-plugins": [
+	  "akismet",
+	  "jetpack",
+	  "really-simple-ssl",
+	  "wp-cloudflare-page-cache",
+	  "wp-search-with-algolia"
+	]
+  },
+  "scripts": {
+	"postbuild": [
+	  "mv wp-config.php wordpress/",
+	  "rm -rf wordpress/wp-content/themes/twenty*",
+	  "rm -rf wordpress/wp-content/themes/hello.php"
+	],
+	"post-install-cmd": "@postbuild"
+  },
+  "extra": {
+	"installer-paths": {
+	  "wordpress/wp-content/plugins/{$name}": [
+		"type:wordpress-plugin"
+	  ],
+	  "wordpress/wp-content/themes/{$name}": [
+		"type:wordpress-theme"
+	  ],
+	  "wordpress/wp-content/mu-plugins/{$name}": [
+		"type:wordpress-muplugin"
+	  ]
+	}
+  },
+  "config": {
+    "allow-plugins": {
+      "johnpbloch/wordpress-core-installer": true,
+      "composer/installers": true
+    }
+  }
 }

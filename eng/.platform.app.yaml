@@ -5,7 +5,7 @@
 name: eng
 
 # The runtime the application uses.
-type: "php:7.4"
+type: "php:8.2"
 
 # Configuration of the build of the application.
 build:
