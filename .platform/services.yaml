@@ -3,11 +3,11 @@
 # Each service listed will be deployed
 # to power your Platform.sh project.
 
-neminisdb:
+engdb:
   type: mariadb:10.11
   disk: 512
 
-pgdb:
+itadb:
   type: mariadb:10.11
   disk: 512
 
