@@ -38,7 +38,7 @@
 		"wpackagist-plugin/dynamic-to-top": "^3.5.2",
 		"wpackagist-plugin/jetpack": "^12.0",
 		"wpackagist-plugin/really-simple-ssl": "^7.0.1",
-		"wpackagist-plugin/wp-cloudflare-page-cache": "4.7.4",
+		"wpackagist-plugin/wp-cloudflare-page-cache": "4.7.5",
 		"wpackagist-plugin/wp-search-with-algolia": "^2.1",
 		"wpackagist-plugin/wordpress-importer": "^0.8"
 	},
