@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fdc4b9a756b4ca6d60edcde1dcae064e",
+    "content-hash": "425651206320b3c6e1f83a8fbbef88f8",
     "packages": [
         {
             "name": "composer/installers",
@@ -209,24 +209,24 @@
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.2.2",
+            "version": "6.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "5ed6d4a0469ff42d7ec4a1f72558be8f897a6e18"
+                "reference": "00ea636cf89fd17daacbc3862f368a2782267825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/5ed6d4a0469ff42d7ec4a1f72558be8f897a6e18",
-                "reference": "5ed6d4a0469ff42d7ec4a1f72558be8f897a6e18",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/00ea636cf89fd17daacbc3862f368a2782267825",
+                "reference": "00ea636cf89fd17daacbc3862f368a2782267825",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": ">=5.6.20"
+                "php": ">=7.0.0"
             },
             "provide": {
-                "wordpress/core-implementation": "6.2.2"
+                "wordpress/core-implementation": "6.4.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -253,7 +253,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2023-05-20T04:40:42+00:00"
+            "time": "2023-12-06T16:30:44+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -311,16 +311,16 @@
         },
         {
             "name": "platformsh/config-reader",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/platformsh/config-reader-php.git",
-                "reference": "5511abfdb673ccfcf0eac9eaf65204f73edd90fd"
+                "reference": "dc08f50f5a40a767457668ad154116c8ea89cfc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/platformsh/config-reader-php/zipball/5511abfdb673ccfcf0eac9eaf65204f73edd90fd",
-                "reference": "5511abfdb673ccfcf0eac9eaf65204f73edd90fd",
+                "url": "https://api.github.com/repos/platformsh/config-reader-php/zipball/dc08f50f5a40a767457668ad154116c8ea89cfc6",
+                "reference": "dc08f50f5a40a767457668ad154116c8ea89cfc6",
                 "shasum": ""
             },
             "require": {
@@ -348,21 +348,21 @@
             "description": "Small helper to access Platform.sh environment variables",
             "support": {
                 "issues": "https://github.com/platformsh/config-reader-php/issues",
-                "source": "https://github.com/platformsh/config-reader-php/tree/2.4.0"
+                "source": "https://github.com/platformsh/config-reader-php/tree/2.4.1"
             },
-            "time": "2020-12-10T20:50:12+00:00"
+            "time": "2023-09-14T17:07:00+00:00"
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "5.1",
+            "version": "5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/5.1"
+                "reference": "tags/5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.5.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/akismet.5.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -390,15 +390,15 @@
         },
         {
             "name": "wpackagist-plugin/elasticpress",
-            "version": "4.5.2",
+            "version": "4.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/elasticpress/",
-                "reference": "tags/4.5.2"
+                "reference": "tags/4.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elasticpress.4.5.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/elasticpress.4.7.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -408,15 +408,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "12.2",
+            "version": "12.9.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/12.2"
+                "reference": "tags/12.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.12.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.12.9.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -426,15 +426,15 @@
         },
         {
             "name": "wpackagist-plugin/really-simple-ssl",
-            "version": "7.0.3",
+            "version": "7.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/really-simple-ssl/",
-                "reference": "tags/7.0.3"
+                "reference": "tags/7.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.7.0.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.7.2.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -444,15 +444,15 @@
         },
         {
             "name": "wpackagist-plugin/redis-cache",
-            "version": "2.4.1",
+            "version": "2.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redis-cache/",
-                "reference": "tags/2.4.1"
+                "reference": "tags/2.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redis-cache.2.4.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/redis-cache.2.5.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -480,15 +480,15 @@
         },
         {
             "name": "wpackagist-plugin/social-pug",
-            "version": "1.20.3",
+            "version": "1.31.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/social-pug/",
-                "reference": "tags/1.20.3"
+                "reference": "tags/1.31.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/social-pug.1.20.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/social-pug.1.31.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -534,15 +534,15 @@
         },
         {
             "name": "wpackagist-plugin/wpforms-lite",
-            "version": "1.8.2.1",
+            "version": "1.8.5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
-                "reference": "tags/1.8.2.1"
+                "reference": "tags/1.8.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.8.2.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.8.5.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -576,7 +576,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.3"
+        "php": ">=8.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
