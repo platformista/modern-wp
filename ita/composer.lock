@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d4c00fc3480a1f1a2269c9bd22b4db2",
+    "content-hash": "425651206320b3c6e1f83a8fbbef88f8",
     "packages": [
         {
             "name": "composer/installers",
@@ -131,6 +131,10 @@
                 "zend",
                 "zikula"
             ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v2.2.0"
+            },
             "funding": [
                 {
                     "url": "https://packagist.com",
@@ -149,31 +153,33 @@
         },
         {
             "name": "inpsyde/wp-translation-downloader",
-            "version": "2.2.1",
+            "version": "2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inpsyde/wp-translation-downloader.git",
-                "reference": "5edb344008ea3764fd89848b4c3d3fbff76c2e55"
+                "reference": "623b060cfc22210c8599d14a2eafa1e0bec53df1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inpsyde/wp-translation-downloader/zipball/5edb344008ea3764fd89848b4c3d3fbff76c2e55",
-                "reference": "5edb344008ea3764fd89848b4c3d3fbff76c2e55",
+                "url": "https://api.github.com/repos/inpsyde/wp-translation-downloader/zipball/623b060cfc22210c8599d14a2eafa1e0bec53df1",
+                "reference": "623b060cfc22210c8599d14a2eafa1e0bec53df1",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 || ^2.0",
+                "composer-plugin-api": "^2.0",
                 "composer/installers": "^1.0 || ^2.0",
                 "ext-json": "*",
                 "php": ">=7.2"
             },
             "require-dev": {
-                "behat/behat": "^3.7",
-                "brain/monkey": "^2",
-                "composer/composer": "^2.0",
+                "behat/behat": "^v3.10.0",
+                "brain/monkey": "^2.6.1",
+                "composer/composer": "^2.3.7",
                 "inpsyde/php-coding-standards": "^1.0.0",
-                "mikey179/vfsstream": "^1.6",
-                "phpunit/phpunit": "^8"
+                "mikey179/vfsstream": "^v1.6.10",
+                "ondram/ci-detector": "^4.1.0",
+                "phpunit/phpunit": "^8.5.26",
+                "vimeo/psalm": "^4.23.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -195,7 +201,11 @@
                 }
             ],
             "description": "Composer plugin to download translations from wordpress.org API.",
-            "time": "2022-05-25T11:24:22+00:00"
+            "support": {
+                "issues": "https://github.com/inpsyde/wp-translation-downloader/issues",
+                "source": "https://github.com/inpsyde/wp-translation-downloader/tree/2.5"
+            },
+            "time": "2023-04-14T08:49:43+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
@@ -236,6 +246,13 @@
                 "cms",
                 "wordpress"
             ],
+            "support": {
+                "forum": "https://wordpress.org/support/",
+                "irc": "irc://irc.freenode.net/wordpress",
+                "issues": "https://core.trac.wordpress.org/",
+                "source": "https://core.trac.wordpress.org/browser",
+                "wiki": "https://codex.wordpress.org/"
+            },
             "time": "2023-12-06T16:30:44+00:00"
         },
         {
@@ -286,6 +303,10 @@
             "keywords": [
                 "wordpress"
             ],
+            "support": {
+                "issues": "https://github.com/johnpbloch/wordpress-core-installer/issues",
+                "source": "https://github.com/johnpbloch/wordpress-core-installer/tree/master"
+            },
             "time": "2020-04-16T21:44:57+00:00"
         },
         {
@@ -325,25 +346,11 @@
                 }
             ],
             "description": "Small helper to access Platform.sh environment variables",
+            "support": {
+                "issues": "https://github.com/platformsh/config-reader-php/issues",
+                "source": "https://github.com/platformsh/config-reader-php/tree/2.4.1"
+            },
             "time": "2023-09-14T17:07:00+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/academic-bloggers-toolkit",
-            "version": "5.2.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/academic-bloggers-toolkit/",
-                "reference": "tags/5.2.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/academic-bloggers-toolkit.5.2.2.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/academic-bloggers-toolkit/"
         },
         {
             "name": "wpackagist-plugin/akismet",
@@ -383,15 +390,15 @@
         },
         {
             "name": "wpackagist-plugin/elasticpress",
-            "version": "5.0.0",
+            "version": "4.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/elasticpress/",
-                "reference": "tags/5.0.0"
+                "reference": "tags/4.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elasticpress.5.0.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/elasticpress.4.7.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -401,15 +408,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "12.9",
+            "version": "12.9.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/12.9"
+                "reference": "tags/12.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.12.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.12.9.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -419,15 +426,15 @@
         },
         {
             "name": "wpackagist-plugin/really-simple-ssl",
-            "version": "7.2.0",
+            "version": "7.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/really-simple-ssl/",
-                "reference": "tags/7.2.0"
+                "reference": "tags/7.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.7.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.7.2.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -473,15 +480,15 @@
         },
         {
             "name": "wpackagist-plugin/social-pug",
-            "version": "1.30.0",
+            "version": "1.31.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/social-pug/",
-                "reference": "tags/1.30.0"
+                "reference": "tags/1.31.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/social-pug.1.30.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/social-pug.1.31.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -509,15 +516,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-cloudflare-page-cache",
-            "version": "4.7.5",
+            "version": "4.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-cloudflare-page-cache/",
-                "reference": "tags/4.7.5"
+                "reference": "tags/4.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.4.7.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.4.7.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -527,15 +534,15 @@
         },
         {
             "name": "wpackagist-plugin/wpforms-lite",
-            "version": "1.8.5.2",
+            "version": "1.8.5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
-                "reference": "tags/1.8.5.2"
+                "reference": "tags/1.8.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.8.5.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.8.5.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -569,8 +576,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.3"
+        "php": ">=8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.3.0"
 }
