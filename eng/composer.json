@@ -29,7 +29,7 @@
 	}
   ],
   "require": {
-	"php": ">=7.3",
+	"php": ">=8.0",
 	"johnpbloch/wordpress-core-installer": "^2.0",
 	"johnpbloch/wordpress-core": "^6.0.0",
 	"platformsh/config-reader": "^2.3",
