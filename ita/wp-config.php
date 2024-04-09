@@ -9,8 +9,8 @@ require __DIR__ . '/../vendor/autoload.php';
 $config = new Config();
 
 // Set default scheme and hostname.
-$site_scheme = 'http';
 $site_host   = 'localhost';
+$site_scheme = 'http';
 
 // Update scheme and hostname for the requested page.
 if ( isset( $_SERVER['HTTP_HOST'] ) ) {
