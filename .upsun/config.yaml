@@ -54,25 +54,25 @@ applications:
                         scripts: false
                         allow: true
 
-            # The size of the persistent disk of the application (in MB).
-            disk: 512
+        # The size of the persistent disk of the application (in MB).
+        disk: 512
 
-            # Runtime dependencies.
-            dependencies:
-                php:
-                    wp-cli/wp-cli-bundle: "^2.5.0"
-                    psy/psysh: "^0.8.4"
+        # Runtime dependencies.
+        dependencies:
+            php:
+                wp-cli/wp-cli-bundle: "^2.5.0"
+                psy/psysh: "^0.8.4"
 
-            mounts:
-                "wordpress/wp-content/cache":
-                    source: local
-                    source_path: "cache"
-                "wordpress/wp-content/uploads":
-                    source: local
-                    source_path: "uploads"
-                "wordpress/wp-content/wp-cloudflare-super-page-cache":
-                    source: local
-                    source_path: "wp-cloudflare-page-cache"
+        mounts:
+            "wordpress/wp-content/cache":
+                source: local
+                source_path: "cache"
+            "wordpress/wp-content/uploads":
+                source: local
+                source_path: "uploads"
+            "wordpress/wp-content/wp-cloudflare-super-page-cache":
+                source: local
+                source_path: "wp-cloudflare-page-cache"
 
 services:
     # The services of the project.
@@ -80,18 +80,15 @@ services:
     # to power your Upsun project.
     engdb:
         type: mariadb:11.2
-        disk: 512
 
     itadb:
         type: mariadb:11.2
-        disk: 512
 
     redis:
         type: redis:7.2
 
     es:
         type: elasticsearch:7.10
-        disk: 256
 
 routes:
     # The routes of the project.
