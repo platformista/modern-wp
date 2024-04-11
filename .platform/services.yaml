@@ -4,16 +4,16 @@
 # to power your Platform.sh project.
 
 engdb:
-  type: mariadb:10.4
+  type: mariadb:10.5
   disk: 512
 
 itadb:
-  type: mariadb:10.4
+  type: mariadb:10.5
   disk: 512
 
 redis:
-  type: redis:5.0
+  type: redis:7.2
 
 es:
-  type: elasticsearch:7.2
+  type: elasticsearch:7.10
   disk: 256
