@@ -17,45 +17,43 @@ applications:
             deploy: |
                 set -e
                 bash scripts/deploy.sh
-            # The relationships of the application with services or other applications.
-            # The left-hand side is the name of the relationship as it will be exposed
-            # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
-            # side is in the form `<service name>:<endpoint name>`.
-            relationships:
-                database: "engdb:mysql"
-            # The configuration of app when it is exposed to the web.
-            web:
-                locations:
-                    "/":
-                        # The public directory of the app, relative to its root.
-                        root: "wordpress"
-                        # The front-controller script to send non-static requests to.
-                        passthru: "/index.php"
-                        # Wordpress has multiple roots (wp-admin) so the following is required
-                        index:
-                            - "index.php"
-                        # The number of seconds whitelisted (static) content should be cached.
-                        expires: 600
-                        scripts: true
-                        allow: true
-                        rules:
-                            ^/composer\.json:
-                                allow: false
-                            ^/license\.txt$:
-                                allow: false
-                            ^/readme\.html$:
-                                allow: false
-                    "/wp-content/cache":
-                        root: "wordpress/wp-content/cache"
-                        scripts: false
-                        allow: false
-                    "/wp-content/uploads":
-                        root: "wordpress/wp-content/uploads"
-                        scripts: false
-                        allow: true
+        # The relationships of the application with services or other applications.
+        # The left-hand side is the name of the relationship as it will be exposed
+        # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
+        # side is in the form `<service name>:<endpoint name>`.
+        relationships:
+            database: "engdb:mysql"
 
-        # The size of the persistent disk of the application (in MB).
-        disk: 512
+        # The configuration of app when it is exposed to the web.
+        web:
+            locations:
+                "/":
+                    # The public directory of the app, relative to its root.
+                    root: "wordpress"
+                    # The front-controller script to send non-static requests to.
+                    passthru: "/index.php"
+                    # Wordpress has multiple roots (wp-admin) so the following is required
+                    index:
+                        - "index.php"
+                    # The number of seconds whitelisted (static) content should be cached.
+                    expires: 600
+                    scripts: true
+                    allow: true
+                    rules:
+                        ^/composer\.json:
+                            allow: false
+                        ^/license\.txt$:
+                            allow: false
+                        ^/readme\.html$:
+                            allow: false
+                "/wp-content/cache":
+                    root: "wordpress/wp-content/cache"
+                    scripts: false
+                    allow: false
+                "/wp-content/uploads":
+                    root: "wordpress/wp-content/uploads"
+                    scripts: false
+                    allow: true
 
         # Runtime dependencies.
         dependencies:
