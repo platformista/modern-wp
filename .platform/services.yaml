@@ -4,11 +4,11 @@
 # to power your Platform.sh project.
 
 engdb:
-  type: mariadb:10.5
+  type: mariadb:10.6
   disk: 512
 
 itadb:
-  type: mariadb:10.5
+  type: mariadb:10.6
   disk: 512
 
 redis:

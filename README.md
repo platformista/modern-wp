@@ -71,3 +71,6 @@ Although Platform.sh allow you to do that by defining Cron Jobs [on their own pl
 ## Jetpack's identity crisis averted
 
 You may know that Jetpack can suffer from [identity crisis](https://jetpack.com/support/safe-mode/#what-is-an-identity-crisis). This template is configured so that non-production environments on Platform.sh automatically adopt [Offline Mode](https://jetpack.com/support/development-mode/), thus averting the identity crisis. It would've been preferable to use [Staging Mode](https://jetpack.com/support/staging-sites/) instead of Offline Mode, but it turns out—after a long chat with WordPress support—that just adding `define( 'JETPACK_STAGING_MODE', true );` to `wp-config.php` for a site that already has an active production connection to Jetpack doesn't actually put that site in Safe Mode automatically as described, but still causes the identity crisis.
+
+### Latest update
+April 2024

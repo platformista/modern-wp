@@ -5,16 +5,17 @@
 name: ita
 
 # The runtime the application uses.
-type: 'php:7.4'
+type: 'php:8.3'
+
+runtime:
+  extensions:
+    - redis
 
 # Configuration of the build of the application.
 build:
   flavor: composer
 
 hooks:
-  build: |
-    set -e
-    bash scripts/install-redis.sh 5.1.1
   deploy: |
     set -e
     # The install will fail without this.
