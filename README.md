@@ -27,7 +27,14 @@ WordPress remains by far the CMS that is easiest to adopt, and that provides a f
 
 Platform.sh provide an incredibly flexible and powerful PaaS. As they like to call it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a child environment cloned from your a parent environment (the root of the tree is usually the production environment) for each pull request, and a Status Check that runs a build on Platform.sh out of the new branch, so to verify that the changes do not break anything. Upon merging a PR, the code is deployed straight to the parent environment.
 
-Feel free to poke around the Platform.sh configuration files in this repo to see how the sites were set up with a multi-container deployment comprising of various services.
+## Upsun
+
+As of April 2024, this template also supports [Upsun](https://www.upsun.com), the new offering by Platform.sh
+
+Feel free to poke around the Upsun configuration, too. 
+
+Bear in mind, however, that the "deploy button" you find at the top of this file only works with Platform.sh.
+If you want to deploy this repository to your Upsun account, make sure to fork this repo and then connect your GitHub account to your Upsun one. 
 
 ## Dependabot
 
@@ -71,6 +78,3 @@ Although Platform.sh allow you to do that by defining Cron Jobs [on their own pl
 ## Jetpack's identity crisis averted
 
 You may know that Jetpack can suffer from [identity crisis](https://jetpack.com/support/safe-mode/#what-is-an-identity-crisis). This template is configured so that non-production environments on Platform.sh automatically adopt [Offline Mode](https://jetpack.com/support/development-mode/), thus averting the identity crisis. It would've been preferable to use [Staging Mode](https://jetpack.com/support/staging-sites/) instead of Offline Mode, but it turns out—after a long chat with WordPress support—that just adding `define( 'JETPACK_STAGING_MODE', true );` to `wp-config.php` for a site that already has an active production connection to Jetpack doesn't actually put that site in Safe Mode automatically as described, but still causes the identity crisis.
-
-### Latest update
-April 2024

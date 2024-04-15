@@ -1,0 +1,210 @@
+applications:
+    # The name of this app. Must be unique within a project.
+    eng:
+        # Where the app is located on the filesystem.
+        source:
+            root: "eng"
+
+        # The runtime the application uses.
+        type: "php:8.3"
+
+        # Configuration of the build of the application.
+        build:
+            flavor: composer
+
+        # Hooks into the build and deploy stages.
+        hooks:
+            deploy: |
+                set -e
+                bash scripts/deploy.sh
+        # The relationships of the application with services or other applications.
+        # The left-hand side is the name of the relationship as it will be exposed
+        # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
+        # side is in the form `<service name>:<endpoint name>`.
+        relationships:
+            database: "engdb:mysql"
+
+        # The configuration of app when it is exposed to the web.
+        web:
+            locations:
+                "/":
+                    # The public directory of the app, relative to its root.
+                    root: "wordpress"
+                    # The front-controller script to send non-static requests to.
+                    passthru: "/index.php"
+                    # Wordpress has multiple roots (wp-admin) so the following is required
+                    index:
+                        - "index.php"
+                    # The number of seconds whitelisted (static) content should be cached.
+                    expires: 600
+                    scripts: true
+                    allow: true
+                    rules:
+                        ^/composer\.json:
+                            allow: false
+                        ^/license\.txt$:
+                            allow: false
+                        ^/readme\.html$:
+                            allow: false
+                "/wp-content/cache":
+                    root: "wordpress/wp-content/cache"
+                    scripts: false
+                    allow: false
+                "/wp-content/uploads":
+                    root: "wordpress/wp-content/uploads"
+                    scripts: false
+                    allow: true
+
+        # Runtime dependencies.
+        dependencies:
+            php:
+                wp-cli/wp-cli-bundle: "^2.5.0"
+                psy/psysh: "^0.8.4"
+
+        mounts:
+            "wordpress/wp-content/cache":
+                source: local
+                source_path: "cache"
+            "wordpress/wp-content/uploads":
+                source: local
+                source_path: "uploads"
+            "wordpress/wp-content/wp-cloudflare-super-page-cache":
+                source: local
+                source_path: "wp-cloudflare-page-cache"
+
+    # The name of this app. Must be unique within a project.
+    ita:
+        # Where the app is located on the filesystem.
+        source:
+            root: "ita"
+
+        # The runtime the application uses.
+        type: "php:8.3"
+
+        runtime:
+            extensions:
+                - redis
+
+        # Configuration of the build of the application.
+        build:
+            flavor: composer
+
+        # Hooks into the build and deploy stages.
+        hooks:
+            deploy: |
+                set -e
+                # The install will fail without this.
+                redis-cli -h rediscache.internal FLUSHALL
+                bash scripts/deploy.sh
+
+        # The relationships of the application with services or other applications.
+        # The left-hand side is the name of the relationship as it will be exposed
+        # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
+        # side is in the form `<service name>:<endpoint name>`.
+        relationships:
+            database: 'itadb:mysql'
+            rediscache: 'redis:redis'
+            essearch: 'es:elasticsearch'
+
+        # The configuration of app when it is exposed to the web.
+        web:
+            locations:
+                "/":
+                    # The public directory of the app, relative to its root.
+                    root: "wordpress"
+                    # The front-controller script to send non-static requests to.
+                    passthru: "/index.php"
+                    # Wordpress has multiple roots (wp-admin) so the following is required
+                    index:
+                        - "index.php"
+                    # The number of seconds whitelisted (static) content should be cached.
+                    expires: 600
+                    scripts: true
+                    allow: true
+                    rules:
+                        ^/composer\.json:
+                            allow: false
+                        ^/license\.txt$:
+                            allow: false
+                        ^/readme\.html$:
+                            allow: false
+                "/wp-content/cache":
+                    root: "wordpress/wp-content/cache"
+                    scripts: false
+                    allow: false
+                "/wp-content/uploads":
+                    root: "wordpress/wp-content/uploads"
+                    scripts: false
+                    allow: true
+
+        # Runtime dependencies.
+        dependencies:
+            php:
+                wp-cli/wp-cli-bundle: "^2.5.0"
+                psy/psysh: "^0.8.4"
+
+        mounts:
+            "wordpress/wp-content/cache":
+                source: local
+                source_path: "cache"
+            "wordpress/wp-content/uploads":
+                source: local
+                source_path: "uploads"
+            "wordpress/wp-content/wp-cloudflare-super-page-cache":
+                source: local
+                source_path: "wp-cloudflare-page-cache"
+
+services:
+    # The services of the project.
+    # Each service listed will be deployed
+    # to power your Upsun project.
+    engdb:
+        type: mariadb:11.2
+
+    itadb:
+        type: mariadb:11.2
+
+    redis:
+        type: redis:7.2
+
+    es:
+        type: elasticsearch:7.10
+
+routes:
+    # The routes of the project.
+    # Each route describes how an incoming URL is going
+    # to be processed by Upsun.
+
+    "https://www.eng.org/":
+        type: upstream
+        upstream: "eng:http"
+        cache:
+            enabled: true
+            # Base the cache on the session cookies. Ignore all other cookies.
+            cookies:
+                - "/^wordpress_logged_in_/"
+                - "/^wordpress_sec_/"
+                - "wordpress_test_cookie"
+                - "/^wp-settings-/"
+                - "/^wp-postpass/"
+
+    "https://eng.org/":
+        type: redirect
+        to: "https://www.eng.org/"
+
+    "https://www.ita.com/":
+        type: upstream
+        upstream: "ita:http"
+        cache:
+            enabled: true
+            # Base the cache on the session cookies. Ignore all other cookies.
+            cookies:
+                - "/^wordpress_logged_in_/"
+                - "/^wordpress_sec_/"
+                - "wordpress_test_cookie"
+                - "/^wp-settings-/"
+                - "/^wp-postpass/"
+
+    "https://ita.com/":
+        type: redirect
+        to: "https://www.ita.com/"
