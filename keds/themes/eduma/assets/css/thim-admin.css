@@ -1,0 +1,790 @@
+.thim-demo-browser .themes {
+    overflow: hidden;
+    position: relative;
+}
+
+.thim-demo-browser.overlay .themes {
+    cursor: no-drop;
+}
+
+.thim-demo-browser.loading .themes {
+    cursor: progress;
+}
+
+.thim-demo-browser.overlay .themes,
+.thim-demo-browser.loading .themes {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.thim-demo-browser.overlay .themes:before,
+.thim-demo-browser.loading .themes:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 99;
+}
+
+.tc-importer-wrapper .themes {
+    overflow: hidden;
+    position: relative;
+}
+
+.tc-importer-wrapper.overlay {
+    opacity: unset;
+    position: unset;
+    background: unset;
+}
+
+.tc-importer-wrapper.overlay .themes {
+    cursor: no-drop;
+}
+
+.tc-importer-wrapper.loading .themes {
+    cursor: progress;
+}
+
+.tc-importer-wrapper.overlay .themes,
+.tc-importer-wrapper.loading .themes {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.tc-importer-wrapper.overlay .themes:before,
+.tc-importer-wrapper.loading .themes:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 99;
+}
+
+.tc-importer-wrapper.loading .thim-choose-page-builder:after {
+    -webkit-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+}
+
+.thim-choose-page-builder {
+    position: relative;
+}
+
+.thim-choose-page-builder select {
+    margin-left: 30px;
+}
+
+.thim-choose-page-builder:after {
+    color: #f56e28;
+    content: "\f463";
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: top;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+}
+
+.thim-demo-browser.loading .thim-choose-page-builder:after {
+    -webkit-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+}
+
+.thim-choose-page-builder {
+    clear: both;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-left: 4px solid #46b450;
+    background: #fff;
+    width: auto;
+    padding: 0 15px 15px;
+}
+
+.thim-choose-page-builder select,
+.thim-choose-page-builder select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #ddd;
+}
+
+
+/** add style for event admin **/
+
+body #accordion-panel-support .accordion-section-title,
+body #accordion-section-support_documentation .accordion-section-title {
+    border-left: 0;
+    color: #fff;
+    background: #00b200;
+}
+
+body #customize-controls #accordion-panel-support .accordion-section-title:hover,
+body #customize-controls #accordion-section-support_documentation .accordion-section-title:hover,
+body #customize-controls #accordion-panel-support .accordion-section-title:focus,
+body #customize-controls #accordion-section-support_documentation .accordion-section-title:focus {
+    color: #fff;
+    background: #04a704;
+}
+
+body #customize-controls #accordion-panel-support .accordion-section-title:focus:after,
+body #customize-controls #accordion-section-support_documentation .accordion-section-title:focus:after,
+body #customize-controls #accordion-panel-support .accordion-section-title:hover:after,
+body #customize-controls #accordion-section-support_documentation .accordion-section-title:hover:after {
+    color: #fff;
+}
+
+body #accordion-panel-support .accordion-section-title:after,
+body #accordion-section-support_documentation .accordion-section-title:after {
+    color: #fff;
+}
+
+#thim_event_members {
+    min-height: 200px;
+}
+
+#customize-control-thim_my_text_option {
+    display: none !important;
+}
+
+.support-documentation {
+    padding-top: 15px;
+}
+
+.support-documentation a {
+    text-decoration: none;
+}
+
+.support-documentation a:focus {
+    outline: none;
+}
+
+.support-documentation b,
+.support-documentation>a {
+    font-weight: 600;
+}
+
+.support-documentation b {
+    color: #333;
+}
+
+.support-documentation>a {
+    display: block;
+    margin: 0 0 10px;
+}
+
+.support-documentation .description {
+    margin-top: 15px;
+}
+
+.ratings-social {
+    clear: both;
+    display: block;
+    margin-top: 15px;
+}
+
+.ratings-social a {
+    clear: both;
+    float: left;
+    margin: 5px 0;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 30px;
+    height: 32px;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #555;
+    background: #f7f7f7;
+    -webkit-box-shadow: 0 1px 0 #ccc;
+    box-shadow: 0 1px 0 #ccc;
+    vertical-align: top;
+    min-width: 135px;
+    text-align: center;
+}
+
+.ratings-social a:hover {
+    background: #fafafa;
+    border-color: #999;
+    color: #23282d;
+}
+
+.customize-control-kirki-radio-image .image>label {
+    width: 30%;
+    margin-right: 3%;
+}
+
+.customize-control-kirki-radio-image .image>label>img {
+    margin-bottom: 5px;
+}
+
+.customize-control-kirki-radio-image #input_thim_bg_pattern.image>label {
+    width: auto;
+}
+
+td .simplePanelImagePreview {
+    max-width: 500px;
+    display: block;
+    overflow: hidden;
+}
+
+td .simplePanelImagePreview img {
+    max-width: 100%;
+}
+
+
+/** For widget icon **/
+
+.thim-widget-icon {
+    background-size: 100%;
+    background-image: url(../../images/widget-icon.png);
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+}
+
+.thim-widget-icon.widget-icon {
+    margin-top: 3px !important;
+}
+
+.thim-widget-icon.thim-widget-icon-button {
+    background-position: top -260px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-carousel-categories {
+    background-position: top -480px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-carousel-posts {
+    background-position: top 0 left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-countdown-box {
+    background-position: top -100px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-counters-box {
+    background-position: top -200px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-course-categories {
+    background-position: top -480px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-courses {
+    background-position: top -360px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-courses-collection {
+    background-position: top -240px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-courses-searching {
+    background-position: top -380px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-gallery-images {
+    background-position: top -20px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-gallery-posts {
+    background-position: top -120px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-google-map {
+    background-position: top -220px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-heading {
+    background-position: top -280px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-icon-box {
+    background-position: top -420px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-link {
+    background-position: top -80px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-list-event {
+    background-position: top -300px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-list-post {
+    background-position: top -340px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-login-form {
+    background-position: top -440px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-multiple-images {
+    background-position: top -160px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-one-course-instructors {
+    background-position: top -400px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-our-team {
+    background-position: top -320px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-portfolio {
+    background-position: top -180px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-single-images {
+    background-position: top -460px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-social {
+    background-position: top -60px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-tab-event {
+    background-position: top -240px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-testimonials {
+    background-position: top -40px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-timetable {
+    background-position: top -140px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-twitter {
+    background-position: top -500px left 0;
+}
+
+.thim-widget-icon.thim-widget-icon-video {
+    background-position: top -240px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general {
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+    background-image: url(../../images/widget-icon.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-button {
+    background-position: top -416px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-carousel-categories {
+    background-position: top -768px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-carousel-posts {
+    background-position: top 0 left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-countdown-box {
+    background-position: top -160px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-counters-box {
+    background-position: top -320px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-course-categories {
+    background-position: top -768px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-courses {
+    background-position: top -576px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-courses-collection {
+    background-position: top -384px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-courses-searching {
+    background-position: top -608px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-gallery-images {
+    background-position: top -32px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-gallery-posts {
+    background-position: top -192px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-google-map {
+    background-position: top -352px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-heading {
+    background-position: top -448px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-icon-box {
+    background-position: top -672px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-link {
+    background-position: top -128px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-list-event {
+    background-position: top -480px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-list-post {
+    background-position: top -544px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-login-form {
+    background-position: top -704px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-multiple-images {
+    background-position: top -256px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-one-course-instructors {
+    background-position: top -640px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-our-team {
+    background-position: top -512px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-portfolio {
+    background-position: top -288px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-single-images {
+    background-position: top -736px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-social {
+    background-position: top -96px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-tab-event {
+    background-position: top -384px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-testimonials {
+    background-position: top -64px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-timetable {
+    background-position: top -224px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-twitter {
+    background-position: top -800px left 0;
+}
+
+.thim-widget-icon.vc_element-icon.vc_general.thim-widget-icon-video {
+    background-position: top -384px left 0;
+}
+
+body .theme-browser {
+    overflow: hidden;
+}
+
+.tc-importer-wrapper .theme-browser .themes {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+body .theme-browser .theme.thim-demo {
+    /*display: none;*/
+    width: calc(33.33% - 40px);
+    width: -webkit-calc(33.33% - 40px);
+    width: -moz-calc(33.33% - 40px);
+    padding: 0;
+    margin: 0 20px 40px 0;
+}
+
+.tc-importer-wrapper:not(.visual_composer):not(.site_origin):not(.elementor) .theme[data-thim-demo^=demo-so],
+.tc-importer-wrapper.visual_composer .theme[data-thim-demo^=demo-vc],
+.tc-importer-wrapper.site_origin .theme[data-thim-demo^=demo-so],
+.tc-importer-wrapper.elementor .theme[data-thim-demo^=demo-el] {
+    display: block;
+}
+
+.tc-importer-wrapper.elementor.modern .theme[data-thim-demo^=demo-el],
+.thim-message-import.modern {
+    display: none;
+}
+
+.tc-importer-wrapper.elementor.classic .theme[data-thim-demo^=demo-modern] {
+    display: none;
+}
+
+.thim_layout_importer {
+    margin-left: 25px;
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 15px 20px;
+}
+
+.thim_layout_importer label {
+    margin-right: 20px;
+}
+
+body .theme-browser .theme:nth-child(3n) {
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    body .theme-browser .theme.thim-demo {
+        width: calc(50% - 40px);
+        width: -webkit-calc(50% - 40px);
+        width: -moz-calc(50% - 40px);
+    }
+}
+
+#tp-goto-import-page {
+    display: none;
+}
+
+body .tf-font label {
+    box-sizing: border-box;
+}
+
+body .tf-font select {
+    width: 40%;
+}
+
+@media only screen and (min-width: 1640px) {
+    body .tc-importer-wrapper .theme-browser .theme {
+        width: calc(33.33% - 40px);
+        width: -webkit-calc(33.33% - 40px);
+        width: -moz-calc(33.33% - 40px);
+        padding: 0;
+        margin: 0 20px;
+        margin-bottom: 40px;
+    }
+}
+
+#wp-thim_learnpress_cate_content-wrap {
+    width: 100%;
+}
+
+
+/**
+* VC: Template UI
+**/
+
+[data-tab=default_templates].vc_active .cat-filter {
+    background: #ffffff;
+    color: #0473aa;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    padding-left: 15px;
+}
+
+[data-tab=default_templates] .cat-filter li {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+[data-tab=default_templates] .cat-filter li:hover,
+[data-tab=default_templates] .cat-filter li.active {
+    background: #eee;
+}
+
+[data-tab=default_templates].vc_active {
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 40px;
+}
+
+[data-tab=default_templates].vc_active .vc_col-sm-12 {
+    width: unset;
+    grid-column: 3/span 10;
+    grid-row: 2;
+}
+
+[data-tab=default_templates].vc_active .vc_col-md-12 {
+    width: unset;
+    grid-column: 1/span 12;
+    grid-row: 1;
+}
+
+[data-tab=default_templates].vc_active .vc_ui-template-list.vc_ui-list-bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+[data-tab=default_templates].vc_active .vc_ui-template-list .vc_ui-list-bar-item {
+    flex-direction: column;
+    border: 0;
+    position: relative;
+}
+
+[data-tab=default_templates].vc_active .vc_ui-list-bar-item-actions [data-vc-container='.vc_ui-list-bar'] {
+    display: none !important;
+}
+
+[data-tab=default_templates].vc_active .vc_ui-template-list .vc_ui-control-button {
+    position: absolute;
+    z-index: 99;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #00000029;
+}
+
+[data-tab=default_templates] img {
+    max-width: 100%;
+    height: auto;
+}
+
+[data-tab=default_templates] .preview-image {}
+
+[data-tab=default_templates] .vc_ui-template-list .vc_ui-list-bar-item-trigger {
+    padding: 10px 0;
+    background: #f1f1f1;
+    width: 100%;
+    color: #0473aa;
+    text-align: center;
+}
+
+[data-tab=default_templates] .vc_ui-template-list .vc_ui-control-button .vc-composer-icon.vc-c-icon-add {
+    font-size: 30px;
+    color: #FFF;
+}
+
+[data-tab=default_templates] .cat-filter ul {
+    margin: 0;
+}
+
+[data-tab=default_templates] .vc_ui-list-bar-item-actions.adding .vc-c-icon-add:before {
+    content: "\f111";
+    animation: thim-vc-spin 2s linear infinite;
+    font-family: Dashicons;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+@keyframes thim-vc-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#customize-control-thim_preload.customize-control-kirki-radio-image .image>label {
+    width: 25%;
+}
+
+#customize-control-thim_page_builder_chosen,
+#customize-control-thim_ekits_single_course_tpl,
+#customize-control-thim_ekits_archive_course_tpl {
+    display: none !important;
+}
+
+.rtl .thim-wrapper .plugin-tab .list-plugins .plugin-card .plugin-card-top .column-description {
+    margin-left: 0;
+    margin-right: 140px;
+}
+
+.thim-message-import {
+    padding-left: 25px;
+}
+
+.thim-message-import h3 {
+    margin: 0
+}
+#customize-theme-controls [id*="customize-control-thim_font_h"] .wrapper .font-size,
+#customize-theme-controls [id*="customize-control-thim_font_h"] .wrapper .line-height,
+#customize-theme-controls #customize-control-thim_main_menu .wrapper .font-size,
+#customize-theme-controls #customize-control-thim_main_menu .wrapper .line-height{
+
+    width: 28%;
+}
+#customize-theme-controls [id*="customize-control-thim_font_h"] .wrapper .text-transform,
+#customize-theme-controls #customize-control-thim_main_menu .wrapper .text-transform{
+    width: 39%;
+}
+#customize-theme-controls [id*="customize-control-thim_font_h"] .wrapper .text-transform h5,
+#customize-theme-controls #customize-control-thim_main_menu  .wrapper .text-transform h5{
+    white-space: nowrap;
+}
+#customize-theme-controls .customize-control-kirki-typography .wrapper .font-family{
+    width: 60%;
+}
+#customize-theme-controls .customize-control-kirki-typography .wrapper .variant.kirki-variant-wrapper{
+    width: 35%;
+}
+
+#customize-theme-controls  .customize-control-kirki-switch .switch{
+    margin-bottom: 0.5rem;
+}
+#customize-theme-controls  .customize-control-kirki-switch .switch label:after{
+    width: calc(0.85rem + 4px);
+    height: calc(0.85rem + 4px);
+}
+#customize-theme-controls  .customize-control-kirki-switch .switch label span{
+    font-size: 13px;
+    line-height: 12px;
+}
+.customize-control-thim-radio-image .customizer-text{
+    width: 100%!important;
+}
+#customize-theme-controls .customize-pane-child.open{
+    overflow: hidden!important;
+}
+.thim_mtb_layout_content_page_field .thim-meta-box__image_select--radio img{
+    max-width: unset;
+}
+
+.thim-meta-box__image_select--radio input[type="radio"] + img{
+    border: 2px solid transparent;
+}
+.customize-control-thim-notice.hide{
+    display: none;
+}
+
+.customize-control-thim-notice.hide.hidden{
+    display: block;
+}
+
+#customize-control-thim_to_top_style > .customizer-text{
+    display: none;
+}

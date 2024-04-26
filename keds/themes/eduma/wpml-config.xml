@@ -1,0 +1,410 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="translate">thim_course_skill_level</custom-field>
+        <custom-field action="translate">thim_course_language</custom-field>
+        <custom-field action="translate">thim_quote</custom-field>
+        <custom-field action="translate">thim_author</custom-field>
+        <custom-field action="translate">thim_text</custom-field>
+        <custom-field action="translate">thim_mtb_custom_title</custom-field>
+        <custom-field action="translate">thim_subtitle</custom-field>
+        <custom-field action="translate">_lp_duration</custom-field>
+        <custom-field action="translate">_lp_students</custom-field>
+        <custom-field action="translate">_lp_max_students</custom-field>
+        <custom-field action="translate">_lp_retake_count</custom-field>
+
+    </custom-fields>
+    <custom-types>
+        <custom-type translate="1">lp_course</custom-type>
+        <custom-type translate="1">lp_lesson</custom-type>
+        <custom-type translate="1">lp_quiz</custom-type>
+        <custom-type translate="1">lp_question</custom-type>
+        <custom-type translate="1">lp_order</custom-type>
+        <custom-type translate="1">lp_certificate</custom-type>
+        <custom-type translate="1">our_team</custom-type>
+        <custom-type translate="1">testimonials</custom-type>
+        <custom-type translate="1">tp_event</custom-type>
+        <custom-type translate="1">revslider</custom-type>
+        <custom-type translate="1">portfolio</custom-type>
+        <custom-type translate="1">thim_elementor_kit</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">course_category</taxonomy>
+        <taxonomy translate="1">course_tag</taxonomy>
+        <taxonomy translate="1">our_team_category</taxonomy>
+        <taxonomy translate="1">portfolio_category</taxonomy>
+    </taxonomies>
+    <admin-texts>
+        <key name="theme_mods_eduma">
+            <key name="thim_register_redirect"/>
+            <key name="thim_login_redirect"/>
+            <key name="thim_logo"/>
+            <key name="thim_logo_retina"/>
+            <key name="thim_sticky_logo"/>
+            <key name="thim_sticky_logo_mobile"/>
+            <key name="thim_logo_mobile"/>
+            <key name="thim_sticky_logo_mobile"/>
+            <key name="thim_front_page_top_image"/>
+            <key name="thim_archive_single_top_image"/>
+            <key name="thim_learnpress_cate_top_image"/>
+            <key name="thim_learnpress_single_top_image"/>
+            <key name="thim_woo_cate_top_image"/>
+            <key name="thim_woo_single_top_image"/>
+            <key name="thim_portfolio_cate_top_image"/>
+            <key name="thim_event_cate_top_image"/>
+            <key name="thim_event_cate_sub_title"/>
+            <key name="thim_event_single_top_image"/>
+            <key name="thim_event_single_sub_title"/>
+            <key name="thim_portfolio_single_top_image"/>
+            <key name="thim_forum_cate_top_image"/>
+            <key name="thim_team_cate_top_image"/>
+            <key name="thim_team_single_top_image"/>
+            <key name="thim_testimonials_cate_top_image"/>
+            <key name="thim_testimonials_single_top_image"/>
+            <key name="thim_collection_single_top_image"/>
+            <key name="thim_single_404_page_title"/>
+            <key name="thim_single_404_sub_title"/>
+            <key name="thim_single_404_top_image"/>
+            <key name="thim_single_404_left"/>
+            <key name="thim_front_page_sub_title"/>
+            <key name="thim_archive_cate_sub_title"/>
+            <key name="thim_archive_single_sub_title"/>
+            <key name="thim_learnpress_cate_sub_title"/>
+            <key name="thim_learnpress_single_sub_title"/>
+            <key name="thim_collection_single_sub_title"/>
+            <key name="thim_woo_single_sub_title"/>
+            <key name="thim_woo_cate_sub_title"/>
+            <key name="thim_portfolio_cate_sub_title"/>
+            <key name="thim_copyright_text"/>
+        </key>
+     </admin-texts>
+    <elementor-widgets>
+
+        <widget name="thim-accordion">
+            <conditions>
+                <condition key="widgetType">thim-accordion</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+            </fields>
+            <fields-in-item items_of="panel">
+                <field type="Accordion: title" editor_type="LINE">panel_title</field>
+                <field type="Accordion: body" editor_type="AREA">panel_body</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="thim-tab">
+            <conditions>
+                <condition key="widgetType">thim-tab</condition>
+            </conditions>
+             <fields-in-item items_of="tab">
+                <field type="Tab: Title" editor_type="LINE">title</field>
+                <field type="Tab: Content" editor_type="AREA">content</field>
+                <field type="Tab: Text Button" editor_type="LINE">text_button</field>
+                <field type="Tab: Link" editor_type="LINK" key_of="link">url</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="thim-timetable">
+            <conditions>
+                <condition key="widgetType">thim-timetable</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+            </fields>
+            <fields-in-item items_of="panel">
+                <field type="Panel List: Course Title" editor_type="LINE">panel_title</field>
+                <field type="Panel List: Time Activity" editor_type="LINE">panel_time</field>
+                <field type="Panel List: Teacher Name" editor_type="LINE">panel_teacher</field>
+                <field type="Panel List: Location" editor_type="LINE">panel_location</field>
+            </fields-in-item>
+        </widget>
+
+
+        <widget name="thim-heading">
+            <conditions>
+                <condition key="widgetType">thim-heading</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+                <field type="Main Title" editor_type="LINE">main_title</field>
+                <field type="Sub Title" editor_type="AREA">sub_heading</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-icon-box">
+            <conditions>
+                <condition key="widgetType">thim-icon-box</condition>
+            </conditions>
+            <fields>
+                <field type="title" editor_type="LINE">title</field>
+                <field type="Description" editor_type="AREA">content</field>
+                <field type="Number" editor_type="LINE">text_number</field>
+                <field type="URL" editor_type="LINK" key_of="link">url</field>
+                <field type="Read More Text" editor_type="LINE">read_text</field>
+             </fields>
+        </widget>
+
+        <widget name="thim-button">
+            <conditions>
+                <condition key="widgetType">thim-button</condition>
+            </conditions>
+            <fields>
+                <field type="Button Text" editor_type="LINE">title</field>
+                <field type="Button URL" editor_type="LINE">url</field>
+             </fields>
+        </widget>
+
+        <widget name="thim-carousel-categories">
+            <conditions>
+                <condition key="widgetType">thim-carousel-categories</condition>
+            </conditions>
+            <fields>
+                <field type="Heading" editor_type="LINE">title</field>
+                <field type="Link View All" editor_type="LINE">link_view_all</field>
+                <field type="Text View All" editor_type="LINE">text_view_all</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-carousel-post">
+            <conditions>
+                <condition key="widgetType">thim-carousel-post</condition>
+            </conditions>
+            <fields>
+                <field type="Heading" editor_type="LINE">title</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-countdown-box">
+            <conditions>
+                <condition key="widgetType">thim-countdown-box</condition>
+            </conditions>
+            <fields>
+                <field type="Text Days" editor_type="LINE">text_days</field>
+                <field type="Text Hours" editor_type="LINE">text_hours</field>
+                <field type="Text Minutes" editor_type="LINE">text_minutes</field>
+                <field type="Text Seconds" editor_type="LINE">text_seconds</field>
+             </fields>
+        </widget>
+
+        <widget name="thim-counters-box">
+            <conditions>
+                <condition key="widgetType">thim-counters-box</condition>
+            </conditions>
+            <fields>
+                <field type="Counters Label" editor_type="LINE">counters_label</field>
+                <field type="Text Number" editor_type="LINE">text_number</field>
+                <field type="View More Text" editor_type="LINE">view_more_text</field>
+
+                <field type="Link View More" editor_type="LINK" key_of="view_more_link">url</field>
+             </fields>
+        </widget>
+
+        <widget name="thim-course-categories">
+            <conditions>
+                <condition key="widgetType">thim-course-categories</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+             </fields>
+        </widget>
+
+        <widget name="thim-courses">
+            <conditions>
+                <condition key="widgetType">thim-courses</condition>
+            </conditions>
+            <fields>
+                <field type="Heading" editor_type="LINE">title</field>
+                <field type="Before Heading" editor_type="LINE">before_heading</field>
+                <field type="View All Text" editor_type="LINE">view_all_courses</field>
+             </fields>
+        </widget>
+
+        <widget name="thim-courses-searching">
+            <conditions>
+                <condition key="widgetType">thim-courses-searching</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+                <field type="Description" editor_type="LINE">description</field>
+                <field type="Placeholder Input" editor_type="LINE">placeholder</field>
+             </fields>
+        </widget>
+
+        <widget name="thim-gallery-images">
+            <conditions>
+                <condition key="widgetType">thim-gallery-images</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+                <field type="Image Link" editor_type="AREA">image_link</field>
+             </fields>
+        </widget>
+
+        <widget name="thim-google-map">
+            <conditions>
+                <condition key="widgetType">thim-google-map</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+                <field type="Google Map API Key" editor_type="LINE">api_key</field>
+                <field type="Location" editor_type="AREA">map_center</field>
+                <field type="Lat" editor_type="LINE">lat</field>
+                <field type="Lng" editor_type="LINE">lng</field>
+            </fields>
+            <fields-in-item items_of="marker_positions">
+                <field type="Marker Positions: Place" editor_type="AREA">place</field>
+            </fields-in-item>
+        </widget>
+
+        <widget name="thim-image-box">
+            <conditions>
+                <condition key="widgetType">thim-image-box</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+                <field type="Description" editor_type="AREA">description</field>
+                <field type="Link Title" editor_type="LINE">link</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-link">
+            <conditions>
+                <condition key="widgetType">thim-link</condition>
+            </conditions>
+            <fields>
+                <field type="Title on here" editor_type="LINE">text</field>
+                <field type="Content" editor_type="AREA">content</field>
+                <field type="Link of title" editor_type="LINE" >link</field>
+             </fields>
+        </widget>
+
+        <widget name="thim-list-event">
+            <conditions>
+                <condition key="widgetType">thim-list-event</condition>
+            </conditions>
+            <fields>
+                <field type="Heading" editor_type="LINE">title</field>
+                <field type="Sub Title" editor_type="LINE">sub_title</field>
+                <field type="Text Link All" editor_type="LINE">text_link</field>
+                <field type="Excerpt More" editor_type="LINE">excerpt_more</field>
+                <field type="Read More Text" editor_type="LINE">read_more_text</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-list-post">
+            <conditions>
+                <condition key="widgetType">thim-list-post</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+                <field type="Sub Title" editor_type="LINE">sub_title</field>
+                <field type="Link" editor_type="LINE">link</field>
+                <field type="Text All Posts" editor_type="LINE">text_link</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-login-form">
+            <conditions>
+                <condition key="widgetType">thim-login-form</condition>
+            </conditions>
+            <fields>
+                <field type="Terms of Service link" editor_type="LINK" key_of="term">url</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-login-popup">
+            <conditions>
+                <condition key="widgetType">thim-login-popup</condition>
+            </conditions>
+            <fields>
+                <field type="Register Label" editor_type="LINE">text_register</field>
+                <field type="Login Label" editor_type="LINE">text_login</field>
+                <field type="Logout Label" editor_type="LINE">text_logout</field>
+                <field type="Profile Label" editor_type="LINE">text_profile</field>
+                <field type="ShortCode" editor_type="LINE">shortcode</field>
+                <field type="Terms of Service link" editor_type="LINK" key_of="term">url</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-navigation-menu">
+            <conditions>
+                <condition key="widgetType">thim-navigation-menu</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-one-course-instructors">
+            <conditions>
+                <condition key="widgetType">thim-one-course-instructors</condition>
+            </conditions>
+            <fields>
+                <field type="Course ID" editor_type="LINE">courses_id</field>
+            </fields>
+        </widget>
+
+         <widget name="thim-our-team">
+            <conditions>
+                <condition key="widgetType">thim-our-team</condition>
+            </conditions>
+            <fields>
+                <field type="CTA Button Text" editor_type="LINE">text_link</field>
+                <field type="CTA Button Link" editor_type="LINK" key_of="link">url</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-single-images">
+            <conditions>
+                <condition key="widgetType">thim-single-images</condition>
+            </conditions>
+            <fields>
+                <field type="Image Title" editor_type="LINE">image_title</field>
+                <field type="Image Link" editor_type="LINE">image_link</field>
+            </fields>
+        </widget>
+
+
+
+        <widget name="thim-tab-event">
+            <conditions>
+                <condition key="widgetType">thim-tab-event</condition>
+            </conditions>
+            <fields>
+                <field type="Heading" editor_type="LINE">title</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-testimonials">
+            <conditions>
+                <condition key="widgetType">thim-testimonials</condition>
+            </conditions>
+            <fields>
+                <field type="Heading Text" editor_type="LINE">title</field>
+            </fields>
+        </widget>
+
+        <widget name="thim-twitter">
+            <conditions>
+                <condition key="widgetType">thim-twitter</condition>
+            </conditions>
+            <fields>
+                <field type="Title" editor_type="LINE">title</field>
+                <field type="Username" editor_type="LINE">username</field>
+            </fields>
+         </widget>
+
+        <widget name="thim-video">
+            <conditions>
+                <condition key="widgetType">thim-video</condition>
+            </conditions>
+            <fields>
+                <field type="Vimeo Video ID" editor_type="LINE">external_video</field>
+                <field type="Youtube Video ID" editor_type="LINE">youtube_id</field>
+                <field type="Title" editor_type="LINE">title</field>
+                <field type="Description" editor_type="AREA">description</field>
+            </fields>
+         </widget>
+
+    </elementor-widgets>
+</wpml-config>

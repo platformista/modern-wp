@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="85px" viewBox="0 0 160 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <title>switch-1</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Switch-Layout" transform="translate(3.000000, 4.000000)">
+            <rect id="Rectangle" fill="#F9F9F9" x="1" y="0" width="152" height="16"></rect>
+            <text id="Header" font-family="Helvetica-Bold, Helvetica" font-size="8" font-weight="bold" fill="#767676">
+                <tspan x="60" y="11">HEADER</tspan>
+            </text>
+            <rect id="Rectangle" fill="#F9F9F9" x="1" y="62" width="152" height="16"></rect>
+            <text id="Header" font-family="Helvetica-Bold, Helvetica" font-size="8" font-weight="bold" fill="#767676">
+                <tspan x="61" y="69">FOOTER</tspan>
+            </text>
+            <polygon id="Rectangle-Copy" fill="#424343" points="1 21 153 21 153 37 1.20864046 37"></polygon>
+            <rect id="Rectangle" fill="#FFFFFF" x="3" y="25" width="7" height="8"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="15" y="25" width="4" height="2"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="15" y="28" width="4" height="2"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="15" y="31" width="4" height="2"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="12" y="25" width="2" height="2"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="12" y="28" width="2" height="2"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="12" y="31" width="2" height="2"></rect>
+            <rect id="Rectangle" fill="#D8D8D8" x="1" y="41" width="49" height="2"></rect>
+            <rect id="Rectangle" fill="#D8D8D8" x="1" y="47" width="78" height="2"></rect>
+            <rect id="Rectangle" fill="#D8D8D8" transform="translate(58.000000, 55.000000) scale(1, -1) translate(-58.000000, -55.000000) " x="1" y="54" width="114" height="2"></rect>
+            <polygon id="Rectangle" fill="#FFFFFF" points="98 25 118 25 118 33 108.719391 33 98 33"></polygon>
+            <polygon id="Rectangle" fill="#FFFFFF" points="121 25 149 25 149 33 136.007147 33 121 33"></polygon>
+            <text id="Showing-1-9-of-18-re" font-family="Helvetica-Bold, Helvetica" font-size="5" font-weight="bold" fill="#FFFFFF">
+                <tspan x="22" y="31">Showing 1-9 of 18 results</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

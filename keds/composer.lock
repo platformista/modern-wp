@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "afa5d5519455e8f3648e1fc118268e37",
+    "content-hash": "a20cc4f6caf1a189800d6633ab19a4ee",
     "packages": [
         {
             "name": "composer/installers",
@@ -297,6 +297,21 @@
             "time": "2023-09-14T17:07:00+00:00"
         },
         {
+            "name": "thimpress/eduma",
+            "version": "3.0.7",
+            "dist": {
+                "type": "path",
+                "url": "themes/eduma",
+                "reference": "ccad12dcfdfbe04eaa45e974174ac12702337b3e"
+            },
+            "type": "wordpress-theme",
+            "description": "Eduma WordPress Theme",
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
             "name": "wpackagist-plugin/akismet",
             "version": "5.3.2",
             "source": {
@@ -478,15 +493,15 @@
         },
         {
             "name": "wpackagist-plugin/wpforms-lite",
-            "version": "1.8.8.2",
+            "version": "1.8.8.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
-                "reference": "tags/1.8.8.2"
+                "reference": "tags/1.8.8.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.8.8.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.8.8.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
