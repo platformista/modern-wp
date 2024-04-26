@@ -17,11 +17,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v2.2.0
-      - name: Install Platform.sh CLI
+      - name: Install Upsun CLI
         run: |
-          curl -sS https://platform.sh/cli/installer | php
-          echo "/home/runner/.platformsh/bin" >> $GITHUB_PATH
+          curl -fsSL https://raw.githubusercontent.com/platformsh/cli/main/installer.sh | VENDOR=upsun bash
+          echo "/home/runner/.global/bin" >> $GITHUB_PATH
       - name: Run backup
-        run: platform backup:create -W -p ${{secrets.PLATFORMSH_PROJECT}} master
+        run: upsun backup:create -W -p ${{secrets.PLATFORMSH_PROJECT}} master
         env:
           PLATFORMSH_CLI_TOKEN: ${{secrets.PLATFORMSH_CLI_TOKEN}}

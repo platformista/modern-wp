@@ -44,8 +44,7 @@
 	"wpackagist-plugin/wpforms-lite": "^1.6.0.2",
 	"wpackagist-plugin/wp-cloudflare-page-cache": "4.7.2",
 	"wpackagist-plugin/redis-cache": "^2.0.2",
-	"wpackagist-plugin/elasticpress": "^4.0.1",
-	"inpsyde/wp-translation-downloader": "^2.0"
+	"wpackagist-plugin/elasticpress": "^4.0.1"
   },
   "distro": {
 	"default-theme": "lovecraft",
@@ -82,19 +81,12 @@
 	  "wordpress/wp-content/mu-plugins/{$name}": [
 		"type:wordpress-muplugin"
 	  ]
-	},
-	"wp-translation-downloader": {
-	  "languages": [
-		"it_IT"
-	  ],
-	  "directory": "wordpress/wp-content/languages"
 	}
   },
   "config": {
     "allow-plugins": {
       "composer/installers": true,
-      "johnpbloch/wordpress-core-installer": true,
-      "inpsyde/wp-translation-downloader": true
+      "johnpbloch/wordpress-core-installer": true
     }
   }
 }
