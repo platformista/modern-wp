@@ -2,10 +2,14 @@
 # in the same project.
 
 # The name of this app. Must be unique within a project.
-name: eng
+name: keds
 
 # The runtime the application uses.
-type: "php:8.3"
+type: 'php:8.3'
+
+runtime:
+  extensions:
+    - redis
 
 # Configuration of the build of the application.
 build:
@@ -14,6 +18,8 @@ build:
 hooks:
   deploy: |
     set -e
+    # The install will fail without this.
+    redis-cli -h rediscache.internal FLUSHALL
     bash scripts/deploy.sh
 
 # The relationships of the application with services or other applications.
@@ -21,19 +27,21 @@ hooks:
 # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
 # side is in the form `<service name>:<endpoint name>`.
 relationships:
-  database: "engdb:mysql"
+  database: 'itadb:mysql'
+  rediscache: 'redis:redis'
+  essearch: 'es:elasticsearch'
 
 # The configuration of app when it is exposed to the web.
 web:
   locations:
-    "/":
+    '/':
       # The public directory of the app, relative to its root.
-      root: "wordpress"
+      root: 'wordpress'
       # The front-controller script to send non-static requests to.
-      passthru: "/index.php"
+      passthru: '/index.php'
       # Wordpress has multiple roots (wp-admin) so the following is required
       index:
-        - "index.php"
+        - 'index.php'
       # The number of seconds whitelisted (static) content should be cached.
       expires: 600
       scripts: true
@@ -45,12 +53,12 @@ web:
           allow: false
         ^/readme\.html$:
           allow: false
-    "/wp-content/cache":
-      root: "wordpress/wp-content/cache"
+    '/wp-content/cache':
+      root: 'wordpress/wp-content/cache'
       scripts: false
       allow: false
-    "/wp-content/uploads":
-      root: "wordpress/wp-content/uploads"
+    '/wp-content/uploads':
+      root: 'wordpress/wp-content/uploads'
       scripts: false
       allow: true
 
@@ -58,17 +66,17 @@ web:
 disk: 512
 dependencies:
   php:
-    wp-cli/wp-cli-bundle: "^2.5.0"
-    psy/psysh: "^0.8.4"
+    wp-cli/wp-cli-bundle: '^2.5.0'
+    psy/psysh: '^0.8.4'
 
 # The mounts that will be performed when the package is deployed.
 mounts:
-  "wordpress/wp-content/cache":
+  'wordpress/wp-content/cache':
     source: local
-    source_path: "cache"
-  "wordpress/wp-content/uploads":
+    source_path: 'cache'
+  'wordpress/wp-content/uploads':
     source: local
-    source_path: "uploads"
-  "wordpress/wp-content/wp-cloudflare-super-page-cache":
+    source_path: 'uploads'
+  'wordpress/wp-content/wp-cloudflare-super-page-cache':
     source: local
-    source_path: "wp-cloudflare-page-cache"
+    source_path: 'wp-cloudflare-page-cache'
