@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="244px" height="156px" viewBox="0 0 244 156" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <title>page-title-3</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#010101" stop-opacity="0.682637675" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-Title-3" transform="translate(-23.000000, -1.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="23" width="288" height="81"></rect>
+            <g id="Group" transform="translate(40.000000, 82.000000)">
+                <image id="default" x="0" y="0" width="210" height="61" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA9CAYAAADYizcVAAAAAXNSR0IArs4c6QAABCtJREFUeAHt2UFS4zAQhWHZEcUW7sH978GOW7BikQqJx0+iKcVF2z3LSL+rjJNITE1/0ZNkM31+fi7zPKdlWdJoh2qepim9vLxMXu34TGVsvL6+/mmET/WZvQHE5wggEBcgSHEreiLgChAkl4YGBOICBCluRU8EXAGC5NLQgEBcgCDFreiJgCtAkFwaGhCICxCkuBU9EXAFCJJLQwMCcQGCFLeiJwKuAEFyaWhAIC5AkOJW9ETAFSBILg0NCMQFCFLcip4IuAIEyaWhAYG4AEGKW9ETAVeAILk0NCAQFyBIcSt6IuAKECSXhgYE4gIEKW5FTwRcAYLk0tCAQFyAIMWt6ImAK0CQXBoaEIgLEKS4FT0RcAUIkktDAwJxAYIUt6InAq4AQXJpaEAgLkCQ4lb0RMAVIEguDQ0IxAUIUtyKngi4AgTJpaEBgbgAQYpb0RMBV4AguTQ0IBAXIEhxK3oi4AoQJJeGBgTiAgQpbkVPBFwBguTS0IBAXIAgxa3oiYArQJBcGhoQiAsMGaR5ntOyLGmaprjUQD3x2f+y//IpQdKgGu1QiHRGao/06c0Pn/1vdOszRwfT/j/7OK0KRXse/c/xSbsrNz7VpwTpaDD11n673UIrkerWQBnt2PpoK+Md+KQkn2xAmqV7R7G9rdX8P9fRfb6/v5fT6XRHdr1e09fXV/lsdJ9pBRjmBkkzbTtZ6LUGQ87ZXXbwuZagWIhGCMzdbNG88caPukxr4zBBakPU+ChcbpDwSXdPOG3etesOXUvcxWuv1jK5rD9KkMobfzx1AdEW0da7FyR8WjX/devp9+qnZVtvuYvcLln9lHtfiYrX0darrd3R0fY/6vvI7Z6Pfa7aWi+56MBnfb6wIg23IrUDQ8s1K1LJw++PrY+FRdcfr7vtnj7X76hthOMvn/l8PpfaR0AQgM2eNiCOvnh8Ulqf2JVHvHrqaePEViZ8qk/++PgoUCPMKBoEqlPnz9O6oxwlfFJ6enpKb29vvxOuHNcnneU9PtUna0bRTCMsm2UOR9eDdlB9GgR6lKtTr21G9UrC51xWcY2R9rCJF5/qkzWghKLlW9eeD82iqtO2dwqW/X3EqxufOulYcMzJ3uNTfbJmGgvR0aAyxEe92pdvQdL77Uy7rQ2fel8kKzu0kuvUgU/1yQak2VoDrOdD9WkLq4nDtniXy2W3ZHwuZadiE455yE+v7f3I40cG9xvf3SFFIwIIeALZlmjN0r1v7VSfbWMFEqkZn3oPYNthG0iahWWDz889kgEJpPetnd0Ya5ti9drWxAbI9opP3b61oZGRBQmf6pP15EoDS3vc3h9/272R7fdV89Hjb3zOv6FpJxlbifCpPvn5+blscXTTbTgtWE+vbUXSl69TQdL5/v6+bP/gaHWvbcP76AGN7VZsZbKxwvjJ5QHWP/V5H+MgSF4GAAAAAElFTkSuQmCC"></image>
+                <rect id="Rectangle" fill="#E2E2E2" x="0" y="0" width="65" height="45"></rect>
+                <polygon id="Rectangle" fill="#E2E2E2" points="72 0 138 0 138 45 72 45"></polygon>
+                <polygon id="Rectangle" fill="#E2E2E2" points="144 0 210 0 210 45 144 45"></polygon>
+            </g>
+            <image id="default-copy" x="0" y="0" width="288" height="23" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAAWCAYAAAAIJMO8AAAAAXNSR0IArs4c6QAABMpJREFUeAHtnE1P40AMhlMIcIQzCASCCwf+/0/hwAGJfwA3vrfPdJ/KWzV0KrbTSrGl2fmyPZ7XjjNJyk6+p/T+/t4dHBx0SYlAIpAIDCHw+fnZ7e/vl+nX19fu6Oio60ke9/f3HXVSIpAIJAJDCEzPGmVqb2+vo9zd3XU9Jw+yCQNJiUAikAgsQ4DkYY74+voqBw5OIz3MTiwTzLFEIBFIBMgRJA6I9mQymbU9lpRe/pMIJAKJQAUC8wRCI5NIBWLJkgiMGAFOH548Pj4+Ss4oY/kFZsRRkVtPBCoR4AsMBw0OHLz7ODw8LI805SXq+fn5/PNMpb5kSwQSgREh4DsQkggnD0rf913PAI18jBlRNORWE4E1ESBheAKJvxnr8x3ImkgmeyIwQgTK+47p1xdPIkBAQmn24w8Wi6ccDCJ57UoCi7ZoGyAxvg4VUP/+pobnxlpSTjuiDTU6xi5vHFGDHadq8BfPGgx/w+P6+kFdro9NXHzYRB3b+hpeiXl0UdTNHH3jSn7kN03YA8W1WL9ZAsEAN4whvIh5e3srBsVx5rZBAINjCDxspW+psQfHQuzFt9Qe9SLoQ7rEAxtoQ8jVYjN2ebASN7DDB2CHL73gGN8U6St8rv+JCcaNK2pfPjJOO84xhgwFHehiD4xL7NEYRRY+9GyLJlNjv5+fn5usDzBeEIDy9PRUAKTteBNDliyCbTji9PR07jjYtJn6J3LeTA0vDmacQIhBsEwPfN41oy50gM0qfMYuD6ZgAM740YvYpCKmy7D/H2P4h7XxF3EdY1q7sOXq6qokNdaE5/HxscjEGyz89C8uLkpSpP3w8DDncx4dxNbZ2VmJHfot6fj4uN0JhI3Fi4CLhU/Im3ZsLaDYYdbH0fSxt9Y+ZAwi1lTeO9IqO+AnoKCYhGjH/pCesctHX9HmQjZxi+sQdv9rnHWjv/EJBTKmqKXFschvLKITMg6MM8bgl4/+Nqj8lL3VwoCAMykAQw3gUCsnD+0Vx2gDwUdZh3SkSRHnohM93GVWEdjwN0ngATbIX15eljsLdx8DaUjP2OXBGYzEnPbNzc1K3IbwXHfceOHGyNr4gzH8qO9oW9RPH3LcPdCnrV7iS0I3xDwxqw7nW9bNEogXJ5sWAOptA7AINvbFso597tHgoa98jZMJfohgoe2zLjqwaRWNWR6swBjswY+aPgVcavBfhe9P867hOjEWjHNqyBpe7UTeWFHWeXyvbxmTD1lj1XV/snETc80SSASNjZBZBc+5TWxwHZ06R5mai1Zej67IoIdCm/8z4fr6eh408i/W4sE4eNAnUCi3t7elXpSJ/ZSf3e3BTh/gk1Yv6vET61Jjg318RBsyLkpnoS+PtkcdzKkPHcxRS87Zb1k3SyBsio2yebMtYMXAb7nxxbW84LEJMhh0qOOLcvZ9dPEFHvzslccS707yLqvhRQY8IOXpO7ZMzrGUn8VVPOrjkxrsxfA3tf5yfWKdtfGLF7jx78XPXEwI8kY+rxXmoKiLPuPqod+ayleYl5eXfzJaayNyvUQgEdh9BOJNlkR2cnIy+wpjRtz9LaSFiUAisG0EYr7YI5PEgW0bl+snAonA7iHAIxolEnmjPFjxBjspEUgEEoEhBOJBg0TCuxnoD0yYpFziSxyvAAAAAElFTkSuQmCC"></image>
+            <text id="PAGE-TITLE" font-family="Helvetica-Bold, Helvetica" font-size="12" font-weight="bold" fill="#333333">
+                <tspan x="105" y="51">PAGE TITLE</tspan>
+            </text>
+            <text id="Home" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="5" font-weight="400" fill="#333333">
+                <tspan x="118" y="61">Home</tspan>
+            </text>
+            <text id="Course" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="5" font-weight="400" fill="#333333">
+                <tspan x="144" y="61">Course</tspan>
+            </text>
+            <polyline id="Path-2" stroke="#535353" stroke-width="0.5" points="138.974693 58.0026271 140.173064 59.6158685 138.974693 60.8103589"></polyline>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,4 @@
+/*!
+ * jQuery CountTo
+ */
+!function(t){t.fn.countTo=function(e){return e=e||{},t(this).each(function(){function n(t){t=a.formatter.call(l,t,a),f.html(t)}var a=t.extend({},t.fn.countTo.defaults,{from:t(this).data("from"),to:t(this).data("to"),speed:t(this).data("speed"),refreshInterval:t(this).data("refresh-interval"),decimals:t(this).data("decimals")},e),o=Math.ceil(a.speed/a.refreshInterval),r=(a.to-a.from)/o,l=this,f=t(this),i=0,c=a.from,s=f.data("countTo")||{};f.data("countTo",s),s.interval&&clearInterval(s.interval),s.interval=setInterval(function(){i++,n(c+=r),"function"==typeof a.onUpdate&&a.onUpdate.call(l,c),i>=o&&(f.removeData("countTo"),clearInterval(s.interval),c=a.to,"function"==typeof a.onComplete&&a.onComplete.call(l,c))},a.refreshInterval),n(c)})},t.fn.countTo.defaults={from:0,to:0,speed:1e3,refreshInterval:100,decimals:0,formatter:function(t,e){return t.toFixed(e.decimals)},onUpdate:null,onComplete:null}}(jQuery);

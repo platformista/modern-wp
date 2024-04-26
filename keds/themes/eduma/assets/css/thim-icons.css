@@ -1,0 +1,96 @@
+.thim-widget-icon {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-size: 100%;
+	background-image: url(../../images/widget-icon.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+.thim-widget-icon.thim-widget-icon-button {
+	background-position: top -416px left 0;
+}
+.thim-widget-icon.thim-widget-icon-carousel-categories {
+	background-position: top -768px left 0;
+}
+.thim-widget-icon.thim-widget-icon-carousel-posts {
+	background-position: top 0 left 0;
+}
+.thim-widget-icon.thim-widget-icon-countdown-box {
+	background-position: top -160px left 0;
+}
+.thim-widget-icon.thim-widget-icon-counters-box {
+	background-position: top -320px left 0;
+}
+.thim-widget-icon.thim-widget-icon-course-categories {
+	background-position: top -768px left 0;
+}
+.thim-widget-icon.thim-widget-icon-courses {
+	background-position: top -576px left 0;
+}
+.thim-widget-icon.thim-widget-icon-courses-collection {
+	background-position: top -384px left 0;
+}
+.thim-widget-icon.thim-widget-icon-courses-searching {
+	background-position: top -608px left 0;
+}
+.thim-widget-icon.thim-widget-icon-gallery-images {
+	background-position: top -32px left 0;
+}
+.thim-widget-icon.thim-widget-icon-gallery-posts {
+	background-position: top -192px left 0;
+}
+.thim-widget-icon.thim-widget-icon-google-map {
+	background-position: top -352px left 0;
+}
+.thim-widget-icon.thim-widget-icon-heading {
+	background-position: top -448px left 0;
+}
+.thim-widget-icon.thim-widget-icon-icon-box {
+	background-position: top -672px left 0;
+}
+.thim-widget-icon.thim-widget-icon-link {
+	background-position: top -128px left 0;
+}
+.thim-widget-icon.thim-widget-icon-list-event {
+	background-position: top -480px left 0;
+}
+.thim-widget-icon.thim-widget-icon-list-post {
+	background-position: top -544px left 0;
+}
+.thim-widget-icon.thim-widget-icon-login-form {
+	background-position: top -704px left 0;
+}
+.thim-widget-icon.thim-widget-icon-multiple-images {
+	background-position: top -256px left 0;
+}
+.thim-widget-icon.thim-widget-icon-one-course-instructors {
+	background-position: top -640px left 0;
+}
+.thim-widget-icon.thim-widget-icon-our-team {
+	background-position: top -512px left 0;
+}
+.thim-widget-icon.thim-widget-icon-portfolio {
+	background-position: top -288px left 0;
+}
+.thim-widget-icon.thim-widget-icon-single-images {
+	background-position: top -736px left 0;
+}
+.thim-widget-icon.thim-widget-icon-social {
+	background-position: top -96px left 0;
+}
+.thim-widget-icon.thim-widget-icon-tab-event {
+	background-position: top -384px left 0;
+}
+.thim-widget-icon.thim-widget-icon-testimonials {
+	background-position: top -64px left 0;
+}
+.thim-widget-icon.thim-widget-icon-timetable {
+	background-position: top -224px left 0;
+}
+.thim-widget-icon.thim-widget-icon-twitter {
+	background-position: top -800px left 0;
+}
+.thim-widget-icon.thim-widget-icon-video {
+	background-position: top -384px left 0;
+}

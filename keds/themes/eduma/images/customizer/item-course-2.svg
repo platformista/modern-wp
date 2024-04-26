@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="121px" height="133px" viewBox="0 0 121 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <title>item-course-2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="List-Item-Copy-2" transform="translate(3.000000, 3.000000)">
+            <rect id="Rectangle" fill="#D8D8D8" x="0.5" y="0" width="114" height="60"></rect>
+            <line x1="9" y1="70.5" x2="26.5" y2="70.5" id="Line-2" stroke="#B1B1B1" stroke-width="2" stroke-linecap="square"></line>
+            <polyline id="Path-3" stroke="#E2E2E2" points="1 60 1 126 114 126 114 60"></polyline>
+            <line x1="1.5" y1="106.5" x2="113.5" y2="106.5" id="Line-4" stroke="#E9E9E9" stroke-linecap="square"></line>
+            <polyline id="Line-3" stroke="#979797" stroke-width="2" fill="#979797" stroke-linecap="square" points="9 85 25.2326282 85 99 85"></polyline>
+            <path d="M9,90.5 C39.8710712,90.5 57.9905757,90.5 63.3585134,90.5 C68.726451,90.5 60.9288438,90.5 39.9656915,90.5" id="Line-3-Copy" stroke="#979797" stroke-width="2" stroke-linecap="square"></path>
+            <rect id="Rectangle" stroke="#D8D8D8" fill="#D8D8D8" x="7.5" y="112.5" width="6" height="7"></rect>
+            <text id="5" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#333333">
+                <tspan x="18" y="119">5</tspan>
+            </text>
+            <rect id="Rectangle" fill="#D8D8D8" x="90" y="112" width="7" height="8"></rect>
+            <text id="10" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#333333">
+                <tspan x="99" y="119">10</tspan>
+            </text>
+            <text id="$100" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#E10000">
+                <tspan x="33" y="119">$100</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

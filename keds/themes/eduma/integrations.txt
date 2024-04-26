@@ -1,0 +1,5 @@
+<div class="item">
+			<a href="https://www.hubspot.com/marketing/free/wordpress-intro?utm_source=ThimPress&utm_medium=WordPress&utm_campaign=ThimPress-WordPress" target="_blank">
+				<img src ="https://53.fs1.hubspotusercontent-na1.net/hubfs/53/HubSpot_Logos/HSLogo_color.svg" width="160px">
+			</a>
+ </div>

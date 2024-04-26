@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="121px" height="133px" viewBox="0 0 121 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <title>item-course-3</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="List-Item-Copy-3" transform="translate(3.000000, 3.000000)">
+            <rect id="Rectangle" fill="#D8D8D8" x="0.5" y="0" width="114" height="60"></rect>
+            <circle id="Oval" stroke="#979797" fill="#979797" cx="13.5" cy="99" r="6"></circle>
+            <line x1="11" y1="67" x2="19.5" y2="67" id="Line-2" stroke="#979797" stroke-width="1.5" stroke-linecap="square"></line>
+            <rect id="Rectangle" stroke="#979797" x="7.5" y="64.5" width="15" height="5" rx="2.5"></rect>
+            <line x1="30" y1="67" x2="38.5" y2="67" id="Line-2" stroke="#979797" stroke-width="1.5" stroke-linecap="square"></line>
+            <path d="M40,64.5 C40.4142136,64.5 40.7892136,64.6678932 41.0606602,64.9393398 C41.3321068,65.2107864 41.5,65.5857864 41.5,66 L41.5,66 L41.5,68 C41.5,68.4142136 41.3321068,68.7892136 41.0606602,69.0606602 C40.7892136,69.3321068 40.4142136,69.5 40,69.5 L40,69.5 L28,69.5 C27.5857864,69.5 27.2107864,69.3321068 26.9393398,69.0606602 C26.6678932,68.7892136 26.5,68.4142136 26.5,68 L26.5,68 L26.5,66 C26.5,65.5857864 26.6678932,65.2107864 26.9393398,64.9393398 C27.2107864,64.6678932 27.5857864,64.5 28,64.5 L28,64.5 Z" id="Rectangle" stroke="#979797"></path>
+            <polyline id="Path-3" stroke="#E2E2E2" points="1 60 1 126 114 126 114 60"></polyline>
+            <line x1="7" y1="108.630486" x2="107.969039" y2="108.369514" id="Line-4" stroke="#E9E9E9" stroke-width="0.6" stroke-linecap="square"></line>
+            <line x1="8" y1="78.5" x2="98" y2="78.5" id="Line-3" stroke="#979797" stroke-width="2" stroke-linecap="square"></line>
+            <path d="M8,84.5 C38.8710712,84.5 56.9905757,84.5 62.3585134,84.5 C67.726451,84.5 59.9288438,84.5 38.9656915,84.5" id="Line-3-Copy" stroke="#979797" stroke-width="2" stroke-linecap="square"></path>
+            <rect id="Rectangle" fill="#D8D8D8" x="7" y="113" width="7" height="8"></rect>
+            <text id="5" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#333333">
+                <tspan x="18" y="120">5</tspan>
+            </text>
+            <rect id="Rectangle" fill="#D8D8D8" x="37" y="113" width="7" height="8"></rect>
+            <text id="10" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#333333">
+                <tspan x="46" y="120">10</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="3.5" y="44.5" width="35" height="11" rx="5.5"></rect>
+            <text id="$100.0" font-family="Helvetica-Bold, Helvetica" font-size="8" font-weight="bold" fill="#E10000">
+                <tspan x="10" y="52">$</tspan>
+                <tspan x="14.4492188" y="52" font-size="7">100.0</tspan>
+            </text>
+            <line x1="25" y1="99" x2="35" y2="99" id="Line-5" stroke="#979797" stroke-width="2" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

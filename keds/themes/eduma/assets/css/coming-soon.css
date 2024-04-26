@@ -1,0 +1,516 @@
+* {
+	margin:  0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+html {
+	font-family:              sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+html {
+	font-size:                   62.5%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+/*           Typography          */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-weight: 400;
+	margin:      30px 0 15px;
+}
+
+h1, .h1 {
+	font-size: 52px;
+}
+
+h2, .h2 {
+	font-size: 36px;
+}
+
+h3, .h3 {
+	font-size: 28px;
+	margin:    20px 0 10px;
+}
+
+h4, .h4 {
+	font-size: 22px;
+        line-height: 40px;
+}
+
+h5, .h5 {
+	font-size: 16px;
+}
+
+h6, .h6 {
+	font-size:      14px;
+	text-transform: uppercase;
+}
+
+p {
+	font-size:   14px;
+	line-height: 1.6180em;
+}
+
+.main {
+	background-position: center center;
+	background-size:     cover;
+	height:              auto;
+	left:                0;
+	min-height:          100%;
+	min-width:           100%;
+	position:            absolute;
+	top:                 0;
+	width:               auto;
+	color:               #fff;
+}
+
+.cover {
+	position: fixed;
+	opacity:  0.5;
+	left:     0;
+	top:      0;
+	width:    100%;
+	height:   100%;
+	z-index:  1;
+}
+
+.cover.black {
+	background: rgba(10, 10, 10, 0.5);
+}
+
+.cover.blue {
+	background-color: rgba(5, 31, 60, 0.6);
+}
+
+.cover.green {
+	background-color: rgba(3, 28, 7, 0.6);
+}
+
+.cover.orange {
+	background-color: rgba(37, 28, 5, 0.6);
+}
+
+.cover.red {
+	background-color: rgba(35, 3, 2, 0.66);
+}
+
+.main .logo {
+	position:   relative;
+	text-align: center;
+	margin-top: 150px;
+	z-index:    3;
+}
+
+.main .content {
+	position:   relative;
+	z-index:    4;
+	text-align: center;
+}
+
+.main .motto {
+	min-height: 140px;
+}
+
+#video_background {
+	position:   fixed;
+	top:        0;
+	right:      0;
+	min-width:  100%;
+	min-height: 100%;
+	width:      auto;
+	height:     auto;
+	z-index:    1;
+	overflow:   hidden;
+}
+
+.footer {
+	position:   relative;
+	bottom:     20px;
+	right:      0;
+	width:      100%;
+	color:      #AAAAAA;
+	z-index:    4;
+	text-align: right;
+	margin-top: 50px;
+}
+
+.footer a {
+	color: #FFFFFF;
+}
+
+.footer .heart {
+	color: #FF3B30;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/*from new lester*/
+.mc4wp-form form > label {
+	display: none;
+}
+
+.form-control.transparent, .mc4wp-form input {
+	background-color: rgba(255, 255, 255, 0.07);
+	border:           1px solid rgba(238, 238, 238, 0.27);
+	color:            #fff;
+
+}
+
+.form-control, .mc4wp-form input {
+	border-radius:  2px;
+	box-shadow:     none;
+	padding:        6px 16px;
+	font-size:      14px;
+	line-height:    1.428571429;
+	vertical-align: middle;
+	width:          100%;
+	display:        inline-block;
+}
+
+.mc4wp-form input[type="submit"] {
+	background:   #2eb0d1;
+	color:        #fff;
+	margin-left:  8px;
+	padding:      8px 20px;
+	border-color: #2eb0d1;
+	width: auto;
+	cursor: pointer;
+}
+
+.mc4wp-form input[type="submit"]:hover {
+	background:   #222;
+	color:        #fff;
+	border-color: #222;
+}
+
+.form-control::-moz-placeholder, .mc4wp-form input::-moz-placeholder {
+	color:   #DDDDDD;
+	opacity: 1;
+}
+
+.form-control::-webkit-input-placeholder, .mc4wp-form input::-webkit-input-placeholder {
+	color:   #DDDDDD;
+	opacity: 1;
+}
+
+.form-control:-ms-input-placeholder, .mc4wp-form input:-ms-input-placeholder {
+	color:   #DDDDDD;
+	opacity: 1;
+}
+
+.btn {
+	display:             inline-block;
+	padding:             8px 16px;
+	margin-bottom:       0;
+	font-size:           12px;
+	font-weight:         normal;
+	line-height:         1.228571429;
+	text-align:          center;
+	white-space:         nowrap;
+	vertical-align:      middle;
+	cursor:              pointer;
+	background-image:    none;
+	border:              1px solid transparent;
+	border-radius:       2px;
+	-webkit-user-select: none;
+	-moz-user-select:    none;
+	-ms-user-select:     none;
+	-o-user-select:      none;
+	user-select:         none;
+
+}
+
+.btn:focus, .form-control:focus, input:focus {
+	outline: none;
+}
+
+.info-text {
+	margin-bottom: 30px;
+}
+
+.btn-danger.btn {
+	background-color: #6cb741;
+	border-color:     #5da633;
+	color:            #fff;
+	margin-left:      -3px;
+}
+
+.mc4wp-form .mc4wp_input {
+	position: relative;
+	width:    260px;
+
+}
+
+.mc4wp-form input[type="email"] {
+	width:   260px;
+	margin:  0 auto;
+	padding: 8px 15px;
+}
+
+.mc4wp-form .mc4wp_input input[type="submit"] {
+	position:   absolute;
+	right:      5px;
+	top:        0;
+	background: transparent;
+	border:     none;
+	width:      25px;
+	height:     37px;
+	cursor:     pointer;
+	color:      #fff;
+}
+
+/*coming soon time**/
+.counter-group {
+	margin:  100px auto;
+	display: inline-block;
+}
+
+.counter-group:before,
+.counter-group:after {
+	content: " ";
+	display: table;
+}
+
+.counter-group:after {
+	clear: both;
+}
+
+.counter-block {
+	float:  left;
+	margin: 0 10px;
+}
+
+.counter-block .counter {
+	position: relative;
+	width:    90px;
+	height:   75px;
+	overflow: hidden;
+}
+
+.counter-block {
+	border:  2px solid #fff;
+	padding: 15px 40px;
+}
+
+.counter-block .counter .number {
+	padding:     1%;
+	width:       46%;
+	height:      98%;
+	position:    absolute;
+	font-size:   70px;
+	line-height: 70px;
+	top:         -10000px;
+}
+
+.counter-block .counter .number.tens {
+	left: 0;
+}
+
+.counter-block .counter .number.units {
+	left: 50%;
+}
+
+.counter-block .counter .number.hundreds {
+	display: none;
+}
+
+.counter-block .counter .number.show {
+	top:     0;
+	z-index: 2;
+}
+
+.counter-block .counter .number.hidden-down {
+	top: 100%;
+}
+
+.counter-block .counter .number.hidden-up {
+	top:     -100%;
+	z-index: 100;
+}
+
+.counter-block .counter.with-hundreds {
+	width: 110px;
+}
+
+.counter-block .counter.with-hundreds .number {
+	width: 30.66%;
+}
+
+.counter-block .counter.with-hundreds .number.tens {
+	left: 33.33%;
+}
+
+.counter-block .counter.with-hundreds .number.units {
+	left: 66.66%;
+}
+
+.counter-block .counter.with-hundreds .number.hundreds {
+	display: block;
+	left:    0;
+}
+
+.counter-block .counter-caption {
+	font-size: 150%;
+}
+
+.form-group .col-md-4 {
+	margin-bottom: 10px;
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+	.main .logo {
+		margin-top: 50px;
+	}
+
+	#coming-soon-counter {
+		padding-top: 0;
+	}
+
+	.counter-group {
+		margin: 80px auto;
+	}
+}
+
+@media (min-width: 219px) {
+	.main .subscribe .form-group {
+		width: auto;
+	}
+
+	.main .subscribe .form-inline .btn {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.main .subscribe .form-inline .btn {
+		width: auto;
+	}
+
+	.form-inline .form-group {
+		display:        inline-block;
+		margin-bottom:  0;
+		vertical-align: middle;
+	}
+}
+
+@media (max-width: 1400px) and(min-width: 1024px) {
+	.main .logo {
+		margin-top: 100px;
+	}
+}
+
+@media (min-width: 991px) {
+	.container {
+		width:  970px;
+		margin: 0 auto;
+	}
+
+	.row:after {
+		clear:   both;
+		display: table;
+		content: " ";
+	}
+
+	.form-group .col-md-4 {
+		width:         33.33333333333333%;
+		padding-right: 5px;
+		float:         left
+	}
+
+	.footer {
+		position: fixed;
+		bottom:   20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.main .subscribe .form-group {
+		width: 60%;
+	}
+}
+
+@media (max-width: 992px) {
+	.counter-group {
+		margin: 50px auto;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.main .logo {
+		margin-top: 50px;
+	}
+
+	.main .container {
+		margin-bottom: 50px;
+		padding:       0 15px;
+	}
+
+	.counter-group {
+		margin: 0 auto;
+	}
+
+	.counter-block {
+		margin-right: 8px;
+	}
+
+	.counter-block .counter {
+		width:  50px;
+		height: 40px;
+	}
+
+	.counter-block .counter .number {
+		font-size:   40px;
+		line-height: 36px;
+	}
+
+	.counter-block .counter.with-hundreds {
+		width: 80px;
+	}
+
+	.counter-block .counter-caption {
+		font-size: 85%;
+	}
+}
+
+@media (max-width: 480px) {
+	.counter-block .counter {
+		width:  40px;
+		height: 40px;
+	}
+
+	.counter-block {
+		padding: 10px 15px;
+		margin:  0 5px;
+	}
+
+	.counter-block .counter .number {
+		font-size:   30px;
+		line-height: 30px;
+	}
+
+	.counter-block .counter.with-hundreds {
+		width: 70px;
+	}
+
+	.counter-block .counter-caption {
+		font-size: 70%;
+	}
+}
