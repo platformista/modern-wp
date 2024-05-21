@@ -1,0 +1,60 @@
+.tc-documentation-wrapper,.tc-service-wrapper {
+	.list-boxes {
+		//display: flex;
+		gap: var(--thim-core-item-padding);
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.box {
+		position: relative;
+		flex-grow: 1;
+		//width: 33.33%;
+		background: #F8F9FB;
+		padding: var(--thim-core-item-padding-box, 20px);
+		border-radius: 5px;
+
+		&:after {
+			content: '';
+			clear: both;
+			display: table;
+		}
+
+		.description {
+			font-style: normal;
+		}
+
+		h3 {
+			line-height: 30px;
+			margin: 0 0 10px 0;
+			font-size: 1.1em;
+			font-weight: 700;
+			text-transform: capitalize;
+		}
+
+		> a {
+
+			text-decoration: none;
+			color: #1E1F21;
+
+			&:hover {
+				text-decoration: underline;
+
+				&:after {
+					text-decoration: none;
+				}
+			}
+
+			&:after {
+				content: "\f344";
+				font-family: Dashicons;
+				position: relative;
+				top: 0;
+				vertical-align: middle;
+				display: inline-block;
+				margin-left: 8px;
+			}
+		}
+
+	}
+}

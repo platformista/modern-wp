@@ -1,0 +1,57 @@
+.thim-dashboard {
+	&.thim-modal-open {
+		overflow: hidden;
+	}
+
+	.md-modal {
+		width: 80%;
+		height: 80%;
+		max-width: 800px;
+		min-width: 320px;
+	}
+
+	/* Content styles */
+	.md-content {
+		background: #fff;
+		position: relative;
+		border-radius: 3px;
+		margin: 0 auto;
+		opacity: 0;
+
+		.title {
+			color: #333;
+			margin: 0;
+			padding: 0.4em;
+			text-align: center;
+			font-size: 2.4em;
+			line-height: 1.2;
+			font-weight: 300;
+			background: rgba(0, 0, 0, 0.1);
+			border-radius: 3px 3px 0 0;
+
+			.close {
+				float: right;
+
+				&:before {
+					content: "\f335";
+					font-family: Dashicons;
+				}
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+
+		.main {
+			max-height: 400px;
+			overflow-y: auto;
+			font-size: 1.2em;
+		}
+
+		.footer {
+			background: rgba(0, 0, 0, 0.1);
+			padding: 1em;
+		}
+	}
+}

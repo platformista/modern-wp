@@ -1,0 +1,123 @@
+.tc-box {
+	background-color: #fff;
+	//box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+	margin-bottom: var(--thim-core-item-padding);
+	min-height: 1em;
+	border-radius: 5px;
+
+	&.locked {
+		color: #999;
+		position: relative;
+
+		.box-title, button {
+			color: #bbb;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 10;
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	.tc-box-header {
+		//border-bottom: 1px solid #eee;
+		//box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.1);
+		display: flex;
+		position: relative;
+		z-index: 1;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding: var(--thim-core-item-padding);
+		padding-bottom: 20px;
+		//background-color: #fff;
+
+		.tc-box-status {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 4.2em;
+			height: 4.2em;
+			z-index: 9;
+			text-align: center;
+
+			&.lock {
+				color: #F44336;
+			}
+
+			&.unlock {
+				color: #4CAF50;
+			}
+
+			span {
+				font-size: 40px;
+				display: block;
+				line-height: 1;
+				width: 100%;
+				height: 100%;
+
+				&:before {
+					line-height: 1.6em;
+				}
+			}
+		}
+
+		.box-title {
+			margin: 0;
+			padding: 0;
+			line-height: 1.3;
+			//height: 3.5em;
+			//line-height: 3.5em;
+			font-size: 1.4em;
+			font-weight: 600;
+			flex-grow: 1;
+		}
+		.sub_link{
+			color: #9d9d9d;
+			text-decoration: none;
+			//font-size: 14px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.tc-box-body {
+		padding: var(--thim-core-item-padding);
+		padding-top: 0;
+		position: relative;
+
+		.video {
+			margin-bottom:var(--thim-core-item-padding);
+		}
+	}
+
+	.tc-box-footer {
+		position: relative;
+		padding: 1em;
+		min-height: 1px;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+}
+.tc-service-wrapper{
+	.list-boxes{
+		margin-bottom: var(--thim-core-item-padding);
+		text-align: center;
+		svg{
+			margin-bottom: 5px;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&.two-col{
+			padding: 0 17%;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}

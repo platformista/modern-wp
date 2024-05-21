@@ -1,0 +1,144 @@
+//Style for tab Plugins
+.thim-wrapper {
+	.filter-links {
+		.updates {
+			display: none;
+
+			&.active {
+				display: inline-block;
+			}
+
+			a {
+				color: #46b450;
+			}
+		}
+	}
+
+	.update-plugins {
+		height: 17px;
+		background: #ca4920;
+		border-radius: 50%;
+		text-align: center;
+		font-size: 10px;
+		line-height: 17px;
+		display: inline-block;
+		padding: 0 6px;
+		color: #FFF;
+		top: 12px;
+		font-weight: 300;
+		position: absolute;
+		right: 20px;
+	}
+
+	.plugin-tab {
+		.list-plugins {
+			margin-left: -8px;
+			margin-right: -8px;
+
+			.plugin-card {
+				margin-top: 0 !important;
+				margin-left: 8px !important;
+				margin-right: 8px !important;
+				width: calc(50% - 16px);
+				clear: none !important;
+
+				&.can-update {
+					background-color: #fff8e5;
+				}
+
+				&[data-status='inactive'], &[data-status='not_installed'] {
+					color: #888;
+
+					h3 {
+						color: #888;
+					}
+
+					.plugin-icon {
+ 						img {
+							-webkit-filter: grayscale(50%);
+							filter: grayscale(50%);
+						}
+					}
+				}
+
+				.plugin-card-top {
+					.name {
+						h3 {
+							background-color: transparent !important;
+						}
+					}
+
+					.plugin-icon {
+						text-align: center;
+						img {
+							max-width: 100%;
+							height: auto;
+							border-radius: 10px;
+						}
+					}
+
+					.column-description {
+						max-height: 90px;
+						overflow: auto;
+						margin-right: 0;
+						margin-top: 15px;
+
+						p {
+							margin: 0;
+						}
+					}
+				}
+
+				.plugin-card-bottom {
+					font-size: 0.8em;
+
+					.plugin-required {
+						color: #f44336;
+					}
+
+					.column-updated {
+						margin-bottom: 0;
+					}
+				}
+
+				&.required {
+					position: relative;
+				}
+
+				.plugin-action-buttons {
+					button {
+						&[data-action="install"], &[data-action="update"] {
+							background: #0085ba;
+							border-color: #0073aa #006799 #006799;
+							-webkit-box-shadow: 0 1px 0 #006799;
+							box-shadow: 0 1px 0 #006799;
+							color: #fff;
+							text-decoration: none;
+							text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//.list-plugins{
+		//@media (min-width: 1101px){
+			.plugin-card .column-description{
+				margin-left: 148px;
+			}
+		//}
+	//}
+}
+
+@media all and (max-width: 768px) {
+	.thim-wrapper {
+		.plugin-tab {
+			.list-plugins {
+				.plugin-card {
+					width: calc(100% - 16px);
+				}
+			}
+		}
+	}
+}

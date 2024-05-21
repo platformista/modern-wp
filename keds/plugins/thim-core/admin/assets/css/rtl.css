@@ -1,0 +1,68 @@
+.rtl .md-modal .md-content .title .close {
+  float: left; }
+
+.rtl .tc-notice {
+  border-right: 4px solid;
+  border-left: none; }
+  .rtl .tc-notice.is-dismissible {
+    padding-left: 50px;
+    padding-right: 10px; }
+  .rtl .tc-notice .content {
+    background-position: center right;
+    padding: 0.8em 40px 0.8em 1em; }
+
+.rtl .thim-getting-started header #skip-step {
+  float: left;
+  padding-left: 1em; }
+
+.rtl .thim-getting-started main .bottom {
+  text-align: left; }
+
+.rtl .thim-getting-started main .tc-run-step {
+  float: left; }
+
+.rtl .thim-getting-started main .tc-skip-step {
+  margin-left: 2em; }
+
+.rtl .tc-modal-importer .main .options .package {
+  padding: 1em 5em 1em 1em; }
+  .rtl .tc-modal-importer .main .options .package label {
+    right: 2em;
+    left: auto; }
+  .rtl .tc-modal-importer .main .options .package[data-status="running"] .package-progress-bar {
+    right: 0; }
+
+.rtl .tc-modal-importer .footer .text-waiting {
+  float: left; }
+
+.rtl .plugin-tab .list-plugins .plugin-card.required:before {
+  right: 0;
+  left: auto; }
+
+.rtl .tc-box .tc-box-header .box-title {
+  padding: 0 1em 0 5em; }
+
+.rtl .tc-box .tc-box-header .tc-box-status {
+  left: 0;
+  right: auto; }
+
+.rtl #menu-to-edit .menu-item:hover .item-controls:before {
+  display: none; }
+
+.rtl #menu-to-edit .menu-item-actions {
+  display: block; }
+
+.rtl #menu-to-edit .thim-wrapper-mega-menu {
+  margin: 20px -10px 20px 0; }
+
+.rtl.thim-dashboard .activate-btn:before {
+  margin-left: 5px; }
+
+.rtl .tc-documentation-wrapper .box .right {
+  padding-right: 55px; }
+  .rtl .tc-documentation-wrapper .box .right > a {
+    float: left; }
+
+.rtl .tc-documentation-wrapper .box .left {
+  right: 0;
+  left: auto; }

@@ -1,0 +1,56 @@
+.thim-form-subscribe {
+	.description {
+		margin-bottom: 1em;
+	}
+
+	&.is-subscribed {
+		.form, .description {
+			display: none;
+		}
+
+		.thanks {
+			display: block;
+			color: #333;
+			font-size: 20px;
+
+			p {
+				color: #888;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.no-subscribe {
+		font-size: 0.9em;
+		a {
+			color: #a5a5a5;
+		}
+	}
+
+	.form {
+		margin-bottom: 10px;
+
+		.email {
+			min-width: 200px;
+			padding: 4px 20px;
+			font-size: 16px;
+			font-weight: 300;
+			text-align: center;
+			line-height: 29px;
+		}
+
+		.button {
+			padding: 4px 20px;
+			position: relative;
+			left: -7px;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			font-size: 16px;
+			font-weight: 300;
+			text-transform: none;
+			transform: translateY(1px);
+			box-shadow: none;
+			line-height: 29px;
+		}
+	}
+}

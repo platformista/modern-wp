@@ -1,0 +1,529 @@
+.tc-importer-wrapper {
+	.thim-demo {
+		position: relative;
+
+		.thim-screenshot {
+			img {
+				transition: all 200ms ease-out;
+			}
+		}
+
+		&:hover {
+			.thim-screenshot {
+				img {
+				}
+			}
+		}
+
+		&.installed {
+			.status {
+				display: block;
+			}
+		}
+
+		.status {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 9;
+			background-color: #0085ba;
+			color: #fff;
+			padding: 0.8em 1.6em;
+			transition: all 300ms ease-out;
+			display: none;
+
+			&:before {
+				content: attr(data-install);
+			}
+
+			&:hover {
+				cursor: pointer;
+				background-color: #EF5350;
+
+				&:before {
+					content: attr(data-text);
+				}
+			}
+		}
+	}
+}
+
+.thim-wrapper {
+	.tc-main {
+		.thim-message-import {
+			padding-left: 0;
+			margin-bottom: 25px;
+			h3, h2{
+				margin-bottom: 15px;
+			}
+		}
+
+		.tc-importer-wrapper {
+
+			.theme-browser {
+				.themes {
+					margin: 0;
+					padding: 0;
+					margin-right: -20px;
+				}
+
+				.theme {
+					width: calc(33.333% - 20px);
+					width: -webkit-calc(33.333% - 20px);
+					width: -moz-calc(33.333% - 20px);
+					margin: 0 20px 20px 0;
+				}
+			}
+
+			@media only screen and (min-width: 1367px) {
+				.theme-browser {
+					.theme {
+						width: calc(25% - 20px);
+						width: -webkit-calc(25% - 20px);
+						width: -moz-calc(25% - 20px);
+					}
+				}
+			}
+			@media only screen and (max-width: 991px) {
+				.theme-browser {
+					.theme {
+						width: calc(50% - 20px);
+						width: -webkit-calc(50% - 20px);
+						width: -moz-calc(50% - 20px);
+					}
+				}
+			}
+			@media only screen and (max-width: 420px) {
+				.theme-browser {
+					.themes {
+						margin-right: 0;
+					}
+
+					.theme {
+						width: 100%;
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.tc-modal-importer {
+	&.importing {
+		.md-content {
+			.title {
+				position: relative;
+
+				.close {
+					visibility: hidden;
+				}
+
+				&:before {
+					//content: '';
+					//border: 1px solid rgba(0, 0, 0, 0.1);
+					//border-top: 1px solid #3498db;
+					//border-radius: 50%;
+					//width: 0.8em;
+					//height: 0.8em;
+					//animation: spinner 0.8s linear infinite;
+					//position: absolute;
+					//z-index: 2;
+					//top: 0.6em;
+					//left: 20px;
+				}
+			}
+		}
+
+		.main {
+			.options {
+				.package {
+					&:hover {
+						cursor: default !important;
+					}
+				}
+			}
+		}
+
+		#start-import {
+			&:before {
+				content: attr(data-importing);
+			}
+		}
+
+		.footer {
+			.text-waiting {
+				opacity: 1;
+			}
+		}
+	}
+
+	&.completed {
+		#start-import {
+			&:before {
+				content: attr(data-completed);
+			}
+		}
+
+		.wrapper-finish {
+			opacity: 1;
+			display: block;
+			z-index: 99;
+		}
+	}
+
+	.title {
+		.demo-name {
+			&:before {
+				content: "\f345";
+				font-family: Dashicons;
+				font-size: 0.6em;
+				padding-right: 0.4em;
+				position: relative;
+				top: -0.1em;
+			}
+		}
+	}
+
+	.main {
+		position: relative;
+		z-index: 0;
+
+		form {
+			margin: 0;
+		}
+
+		h4 {
+			font-size: 1.2em;
+			margin: 0;
+			line-height: 2;
+			padding: 1em 1em 1em 2em;
+			border-bottom: 1px solid #eee;
+		}
+
+		.plugins-required {
+			> span {
+				&[data-status="active"] {
+					font-weight: bold;
+				}
+
+				&[data-status="not_installed"] {
+					color: #999;
+				}
+			}
+		}
+
+		.options {
+			margin: 0;
+
+			.package {
+				margin: 0;
+				padding: 1em 1em 1em 5em;
+				border-bottom: 1px solid #eee;
+				position: relative;
+
+				&:before {
+					content: '';
+					width: 5em;
+					height: 5em;
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 2;
+				}
+
+				&.obligatory {
+					input:checked {
+						&:before {
+							color: #616161;
+						}
+					}
+				}
+
+				.package-progress-bar {
+					display: block;
+					height: 100%;
+					position: absolute;
+					left: 0;
+					width: 0;
+					background: #bae0ec;
+					top: 0;
+					opacity: 0.1;
+					pointer-events: none;
+					transition: all 0.5s;
+				}
+
+				&.disabled {
+					display: none;
+				}
+
+				&[data-status="running"] {
+					label {
+						&:before {
+							opacity: 1;
+						}
+
+						input, &:after {
+							opacity: 0;
+						}
+					}
+
+					.package-progress-bar {
+						min-width: 1% !important;
+					}
+				}
+
+				&[data-status="completed"] {
+					label {
+						&:after {
+							opacity: 1;
+						}
+
+						input, &:before {
+							opacity: 0;
+						}
+					}
+
+					&:after {
+						//content: attr(data-percentage);
+					}
+				}
+
+				&:not(.obligatory):hover {
+					background-color: #eee;
+					cursor: pointer;
+				}
+
+				label {
+					position: absolute;
+					top: 50%;
+					left: 2em;
+					transform: translateX(0) translateY(-50%);
+					width: 1em;
+					height: 1em;
+
+					&:before, &:after, input {
+						transition: all 0.3s ease-out;
+					}
+
+					&:before {
+						content: '';
+						border: 1px solid rgba(0, 0, 0, 0.1);
+						border-top: 1px solid #3498db;
+						border-radius: 50%;
+						width: 1em;
+						height: 1em;
+						animation: spinner 0.8s linear infinite;
+						top: 2px;
+						position: absolute;
+						z-index: 2;
+						opacity: 0;
+					}
+
+					&:after {
+						content: "\f147";
+						font-family: Dashicons;
+						font-size: 1.5em;
+						color: #4CAF50;
+						opacity: 0;
+						z-index: 1;
+					}
+
+					input {
+						top: 5px;
+						position: absolute;
+						z-index: 0;
+					}
+				}
+
+				.heading {
+					font-weight: 500;
+					line-height: 2;
+				}
+
+				.info {
+					color: #F44336;
+					font-size: 0.8em;
+					font-style: italic;
+					margin-top: 0.5em;
+					position: relative;
+					z-index: 10;
+				}
+			}
+		}
+	}
+
+	#start-import {
+		&:before {
+			content: attr(data-text);
+		}
+	}
+
+	.footer {
+		.text-waiting {
+			float: right;
+			line-height: 3em;
+			padding-right: 1em;
+			opacity: 0;
+			transition: all 300ms ease-out;
+		}
+	}
+
+	.wrapper-finish {
+		position: absolute;
+		top: 4.7em;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(255, 255, 255, 0.9);
+		opacity: 0;
+		z-index: -1;
+		display: none;
+		transition: all 0.3s ease-out;
+
+		.full-box {
+			height: 100%;
+			position: relative;
+
+			.middle {
+				position: absolute;
+				width: 100%;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			.notification {
+				.icon {
+					font-size: 10em;
+					display: block;
+					min-height: 100px;
+					text-decoration: none;
+
+					&:before {
+						font-family: Dashicons;
+					}
+				}
+
+				.details-success,
+				.details-error {
+					display: none;
+				}
+			}
+		}
+
+		&.success {
+			.notification {
+				.icon {
+					&:before {
+						color: #4CAF50;
+						content: "\f328";
+					}
+				}
+
+				.details-success {
+					display: block;
+				}
+
+				.leave-five-stars {
+					display: inline-block;
+					padding: 10px;
+				}
+			}
+		}
+
+		&.failed {
+			.try-again {
+				display: none;
+				padding: 1em;
+			}
+
+			&.retry {
+				.get-support {
+					display: none;
+				}
+
+				.try-again {
+					display: block;
+				}
+			}
+
+			.notification {
+				.icon {
+					&:before {
+						color: #9E9E9E;
+						content: "\f153";
+					}
+				}
+
+				.details-error {
+					display: block;
+
+					.how-to {
+						font-size: 1.2em;
+						line-height: 1.5;
+						background-color: #eee;
+						padding: 2em;
+						max-height: 100px;
+						overflow-y: scroll;
+
+						&:before {
+							content: "\f348";
+							font-family: Dashicons;
+							color: #2196F3;
+							padding-right: 1em;
+						}
+					}
+
+					.get-support {
+						padding: 1em;
+						line-height: 3;
+
+						a {
+							margin-right: 1em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.tc-modal-importer-uninstall {
+	.warning {
+		color: #F44336;
+		font-size: 20px;
+	}
+
+	&.running {
+		.title {
+			.close {
+				visibility: hidden;
+			}
+		}
+	}
+
+	.main {
+		padding-top: 40px;
+		padding-bottom: 100px;
+
+		.tc-start {
+			margin-bottom: 2em;
+		}
+	}
+
+	.notifications {
+		> * {
+			display: none;
+		}
+
+		.tc-success {
+			color: #22BB33;
+		}
+
+		.tc-error {
+			color: #F0AD4E;
+		}
+	}
+}

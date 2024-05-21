@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a20cc4f6caf1a189800d6633ab19a4ee",
+    "content-hash": "29de94f4762cad9993e1bd229d272d1d",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,16 +153,16 @@
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.5.2",
+            "version": "6.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "bf083fe2944a4683461d496086ec22319cd8bdf1"
+                "reference": "2e2e090f5f9c342c302b3b1f05c20077f5253222"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/bf083fe2944a4683461d496086ec22319cd8bdf1",
-                "reference": "bf083fe2944a4683461d496086ec22319cd8bdf1",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/2e2e090f5f9c342c302b3b1f05c20077f5253222",
+                "reference": "2e2e090f5f9c342c302b3b1f05c20077f5253222",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +170,7 @@
                 "php": ">=7.0.0"
             },
             "provide": {
-                "wordpress/core-implementation": "6.5.2"
+                "wordpress/core-implementation": "6.5.3"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -197,7 +197,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2024-04-09T21:20:55+00:00"
+            "time": "2024-05-07T16:03:39+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -306,6 +306,21 @@
             },
             "type": "wordpress-theme",
             "description": "Eduma WordPress Theme",
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "thimpress/thim-core",
+            "version": "2.3.2",
+            "dist": {
+                "type": "path",
+                "url": "plugins/thim-core",
+                "reference": "f88fc78469f35f9755b6e987c7ca342798449b79"
+            },
+            "type": "wordpress-plugin",
+            "description": "ThimPress Core",
             "transport-options": {
                 "symlink": false,
                 "relative": true
@@ -439,15 +454,15 @@
         },
         {
             "name": "wpackagist-plugin/social-pug",
-            "version": "1.33.2",
+            "version": "1.34.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/social-pug/",
-                "reference": "tags/1.33.2"
+                "reference": "tags/1.34.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/social-pug.1.33.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/social-pug.1.34.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

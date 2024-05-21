@@ -1,0 +1,54 @@
+.tc-system-status-wrapper {
+	table {
+		border: none;
+		tr {
+			td {
+				&:first-child {
+					font-weight: 600;
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	mark {
+		background-color: transparent;
+
+		&.yes {
+			color: #8BC34A;
+		}
+
+		&.error {
+			color: #F44336;
+		}
+
+		&.warning {
+			color: #FFC107;
+		}
+	}
+
+	#tc_draw_system_status {
+		margin-bottom: 10px;
+
+		&.copy-text {
+			height: 0;
+			width: 0;
+			float: left;
+			padding: 0;
+			border: none;
+		}
+	}
+
+	.btn-copy-container {
+		&.copied {
+			.tc-close {
+				display: inline-block;
+			}
+		}
+	}
+
+	.tc-close {
+		display: none;
+		float: right;
+	}
+}

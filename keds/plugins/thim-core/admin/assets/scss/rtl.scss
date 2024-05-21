@@ -1,0 +1,141 @@
+.rtl {
+	.md-modal {
+		.md-content {
+			.title {
+				.close {
+					float: left;
+				}
+			}
+		}
+	}
+
+	.tc-notice {
+		border-right: 4px solid;
+		border-left: none;
+
+		&.is-dismissible {
+			padding-left: 50px;
+			padding-right: 10px;
+		}
+
+		.content {
+			background-position: center right;
+			padding: 0.8em 40px 0.8em 1em;
+		}
+	}
+
+	.thim-getting-started {
+		header {
+			#skip-step {
+				float: left;
+				padding-left: 1em;
+			}
+		}
+
+		main {
+			.bottom {
+				text-align: left;
+			}
+
+			.tc-run-step {
+				float: left;
+			}
+
+			.tc-skip-step {
+				margin-left: 2em;
+			}
+		}
+	}
+
+	.tc-modal-importer {
+		.main {
+			.options {
+				.package {
+					padding: 1em 5em 1em 1em;
+
+					label {
+						right: 2em;
+						left: auto;
+					}
+
+					&[data-status="running"] {
+						.package-progress-bar {
+							right: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.footer {
+			.text-waiting {
+				float: left;
+			}
+		}
+	}
+
+	.plugin-tab {
+		.list-plugins {
+			.plugin-card {
+				&.required {
+					&:before {
+						right: 0;
+						left: auto;
+					}
+				}
+			}
+		}
+	}
+
+	.tc-box {
+		.tc-box-header {
+			.box-title {
+				padding: 0 30px 0 5em;
+			}
+
+			.tc-box-status {
+				left: 0;
+				right: auto;
+			}
+		}
+	}
+
+	#menu-to-edit {
+		.menu-item {
+			&:hover {
+				.item-controls {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.menu-item-actions {
+			display: block;
+		}
+
+		.thim-wrapper-mega-menu {
+			margin: 20px -10px 20px 0;
+		}
+	}
+
+	&.thim-dashboard .activate-btn:before {
+		margin-left: 5px;
+	}
+
+	.tc-documentation-wrapper .box {
+		.right {
+			padding-right: 55px;
+
+			> a {
+				float: left;
+			}
+		}
+
+		.left {
+			right: 0;
+			left: auto;
+		}
+	}
+}

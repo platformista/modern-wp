@@ -1,0 +1,12 @@
+.tc-close {
+	cursor: pointer;
+
+	&:after {
+		content: "\f335";
+		font-family: Dashicons;
+		font-size: 16px;
+		padding: 5px;
+		position: relative;
+		top: 5px;
+	}
+}

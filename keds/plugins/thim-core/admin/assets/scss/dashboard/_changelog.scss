@@ -1,0 +1,84 @@
+.tc-changelog-wrapper {
+	h2 {
+		font-size: 2em;
+		margin-bottom: 1.5em;
+	}
+
+	.versions {
+		max-height: 330px;
+		overflow-y: auto;
+		margin-right: calc(var(--thim-core-item-padding) * -1);
+		&::-webkit-scrollbar {
+			width: 6px;
+		}
+
+		&::-webkit-scrollbar-track {
+			-webkit-box-shadow: 0 0 0 ;
+			border-radius: 0;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			border-radius: 0;
+			background: #ccc;
+			min-height: 50px;
+ 		}
+		> div {
+			margin-bottom: 40px;
+
+			h3 {
+				font-weight: 500;
+				font-size: 1.1em;
+				margin: 40px 0 10px;
+
+				&:first-child {
+					margin-top: 10px;
+				}
+			}
+
+			.features,
+			.update,
+			.fixes {
+				font-size: 0.8em;
+				font-weight: 500;
+				text-transform: uppercase;
+				margin-bottom: 5px;
+
+				&:before {
+					font-family: dashicons;
+					font-size: 1.5em;
+					position: relative;
+					top: 3px;
+					padding-right: 10px;
+				}
+			}
+
+			.features {
+				&:before {
+					content: "\f227";
+					color: #2196F3;
+				}
+			}
+
+			.update {
+				&:before {
+					content: "\f463";
+					color: #4CAF50;
+
+				}
+			}
+
+			.fixes {
+				&:before {
+					content: "\f308";
+					color: #F44336;
+				}
+			}
+		}
+
+		ul {
+			list-style: disc !important;
+			padding-left: 28px;
+			margin: 0;
+		}
+	}
+}

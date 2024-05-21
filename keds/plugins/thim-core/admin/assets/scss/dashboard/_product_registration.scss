@@ -1,0 +1,121 @@
+.tc-registration-wrapper {
+	//background: #83b04c url('../images/envato-logo.png') no-repeat right -20px bottom -20px;
+	margin-bottom: 30px;
+	//background-size: 50%;
+	position: relative;
+	//box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+	//max-height: 107px;
+ 	background: #272727;
+
+	border-radius: 5px;
+	.network-active {
+		padding: 26px;
+		color: #404040;
+	}
+
+	.left {
+		float: left;
+		padding: 26px;
+
+		.title {
+			color: #fff;
+			font-size: 24px;
+			text-transform: uppercase;
+			margin: 0;
+			padding-bottom: 15px;
+		}
+
+		.sub-title {
+			color: #fff;
+			font-size: 20px;
+		}
+	}
+
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	.right {
+		position: absolute;
+		top: 50%;
+		right: 24px;
+		transform: translate(0, -50%);
+
+		form {
+			display: inline-block;
+
+			.activate-btn {
+				background-color: #fff;
+				border: none;
+				color: #83B04C;
+				text-shadow: none;
+				box-shadow: none;
+				border-radius: 5px;
+				font-weight: 400;
+				padding: 10px 30px;
+				margin: 0;
+				position: relative;
+
+				&:before {
+					background-image: url('../images/envato-blue.svg');
+				}
+			}
+		}
+	}
+
+	.purchase {
+		font-size: 12px;
+		position: absolute;
+		right: 26px;
+		bottom: 6px;
+		color: #fff;
+
+		a {
+			color: #fff;
+		}
+	}
+
+	.tc-steps {
+		font-size: 3.5em;
+		margin-bottom: 0.5em;
+
+		.icon-lock {
+			color: #F44336;
+		}
+
+		.icon-unlock {
+			color: #4CAF50;
+		}
+
+		.icon-mouse-left {
+			color: #9E9E9E;
+		}
+
+		.next {
+			color: #9E9E9E;
+			font-size: 0.5em;
+			position: relative;
+			top: -0.3em;
+		}
+	}
+
+	form {
+		.activate-btn {
+			display: block;
+			margin: 1em auto 1em;
+		}
+	}
+
+	.guide {
+		font-size: 1em;
+		margin: 0;
+	}
+}
+
+#tc-modal-activate-theme {
+	.main {
+		padding: 30px;
+	}
+}

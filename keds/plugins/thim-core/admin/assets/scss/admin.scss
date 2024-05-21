@@ -1,0 +1,73 @@
+#adminmenu .wp-has-current-submenu ul>li>a:empty, #adminmenu .wp-submenu a:empty{
+	display: none!important;
+}
+#toplevel_page_thim-dashboard .wp-menu-image img {
+	padding-top: 7px;
+	color: red;
+	max-width: 20px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.tc-hide {
+	display: none;
+}
+
+.tc-notice {
+	background-color: #fff;
+	margin: 0.5em 0 1em;
+	border-left: 4px solid #fff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+	position: relative;
+	padding-left: 10px;
+
+	&.is-dismissible {
+		padding-right: 50px;
+	}
+
+	.content {
+		padding: 0.8em 1em 0.8em 10px;
+	}
+
+	&.tc- {
+		&info {
+			border-color: #bdbdbd;
+		}
+
+		&error {
+			border-color: #F44336;
+		}
+
+		&warning {
+			border-color: #ffc107;
+		}
+
+		&success {
+			border-color: #4caf50;
+		}
+	}
+}
+
+.tc-base-middle {
+	white-space: nowrap;
+
+	&:before {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -.25em;
+		float: left;
+	}
+}
+
+@import "admin/typography";
+@import "admin/loading";
+@import "admin/meta-box";
+@import "admin/modal";
+@import "admin/widgets";
+@import "admin/welcom-panel";
+@import "rtl";
+

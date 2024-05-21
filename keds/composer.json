@@ -33,6 +33,13 @@
 			"options": {
 				"symlink": false
 			}
+		},
+		{
+			"type": "path",
+			"url": "plugins/*",
+			"options": {
+				"symlink": false
+			}
 		}
 	],
 	"require": {
@@ -52,7 +59,8 @@
 		"wpackagist-plugin/wp-cloudflare-page-cache": "4.7.2",
 		"wpackagist-plugin/redis-cache": "^2.0.2",
 		"wpackagist-plugin/elasticpress": "^4.0.1",
-		"thimpress/eduma": "^3.0.0"
+		"thimpress/eduma": "^3.0.0",
+		"thimpress/thim-core": "^2.3.0"
 	},
 	"distro": {
 		"default-theme": "eduma",
@@ -65,6 +73,7 @@
 			"redis-cache",
 			"series",
 			"social-pug",
+			"thim-core",
 			"wp-cloudflare-page-cache",
 			"wpforms-lite"
 		]

@@ -1,0 +1,233 @@
+.tc-dashboard-wrapper {
+
+	.tc-sortable {
+		min-height: 100px;
+	}
+
+	.tc-ui-state-highlight {
+		display: block;
+		margin-bottom: 2em;
+		min-height: 300px;
+		border: 2px dashed #ddd;
+	}
+
+	.tc-box-temporary {
+		visibility: hidden;
+		min-height: 300px;
+	}
+}
+
+.text-panel-customizer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px;
+	max-height: 340px;
+	overflow: auto;
+	margin-right: calc(var(--thim-core-item-padding) * -1);
+	padding-right: var(--thim-core-item-padding);
+	&::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	&::-webkit-scrollbar-track {
+		-webkit-box-shadow: 0 0 0 ;
+		border-radius: 0;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 0;
+		background: #ccc;
+		min-height: 50px;
+	}
+	.tc-base-color {
+		border: 1px solid var(--thim-core-border-color);
+		margin: 0;
+		box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+		text-transform: capitalize;
+		color: #444;
+		min-width: unset;
+		padding: 10px 7px;
+
+		&:hover {
+			border-color: #2271b1;
+			background: transparent;
+			color: #2271b1;
+		}
+	}
+}
+
+.td-box-welcome-admin {
+	display: flex;
+	gap: var(--thim-core-item-padding);
+	align-items: flex-start;
+
+	.box-left {
+		flex-grow: 1;
+
+		p {
+			max-width: 600px
+		}
+	}
+
+	.box-right {
+		width: 100%;
+		max-width: 40%;
+		display: flex;
+		gap: var(--thim-core-item-padding);
+		justify-content: flex-end;
+		margin-top: -35px;
+
+		.box {
+			width: 50%;
+			max-width: 180px;
+			border: 1px solid var(--thim-core-border-color);
+			border-radius: var(--thim-core-border-radius);
+			text-align: center;
+			padding: var(--thim-core-item-padding);
+
+			h5 {
+				font-size: 15px;
+				font-weight: 600;
+				margin: 15px 0 10px 0;
+				line-height: 1.3em;
+			}
+
+			p {
+				color: #444;
+				font-size: 0.925em;
+				margin-bottom: 15px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.update-notice a, .tc-update-now {
+				text-decoration: none;
+				color: #1E1F21;
+
+				&:after {
+					content: "\f344";
+					font-family: Dashicons;
+					position: relative;
+					top: 0;
+					vertical-align: middle;
+					display: inline-block;
+					margin-left: 8px;
+				}
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+				&:focus {
+					outline: none;
+					box-shadow: none;
+				}
+			}
+		}
+
+		.icon {
+			border-radius: 50%;
+			background: #FFCDB2;
+			display: inline-flex;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			padding: 0;
+			align-items: center;
+			justify-content: center;
+			color: #F24E1E;
+
+			svg {
+				width: 25px;
+			}
+		}
+
+		.reqirements-success {
+			.icon {
+				background: rgba(15, 169, 88, 0.2);
+
+				svg path {
+					fill: rgba(15, 169, 88, 1);
+				}
+			}
+		}
+	}
+	.box-info-reqirements{
+		.icon:before{
+			content: '';
+			width: 25px;
+			height: 25px;
+			background: url('../images/icon-sad.svg') no-repeat center center;
+			background-size: contain;
+		}
+		&.reqirements-success .icon:before{
+			background: url('../images/icon-happy.svg') no-repeat center center;
+			background-size: contain;
+		}
+	}
+	.box-info-update {
+		position: relative;
+		z-index: 9;
+		.tc-button-deregister{
+			position: absolute;
+			right: 8px;
+			top: 0;
+			font-size: 11px;
+			text-decoration: none;
+			color: red;
+			display: none;
+			opacity: 0.5;
+			text-transform: uppercase;
+			font-weight: 600;
+ 			background: transparent;
+			&:hover{
+				opacity: 1;
+			}
+		}
+		&:hover{
+			.tc-button-deregister{
+				display: block;
+			}
+		}
+		.icon:before {
+			//content: "\f15e";
+			content: "\f113";
+			font-family: Dashicons;
+			vertical-align: middle;
+			display: inline-block;
+			font-size: 30px;
+		}
+
+		&.no-update .icon {
+			background: rgba(15, 169, 88, 0.2);
+			color: rgba(15, 169, 88, 1);
+
+			&:before {
+				content: "\f15e";
+			}
+		}
+
+		.notice-error {
+			.update-message {
+				background-color: #fcf0f1;
+				border-left: 2px solid #d63638;
+			}
+		}
+
+	}
+
+	.updating-theme {
+		.icon:before {
+			animation: rotation 2s infinite linear;
+		}
+	}
+	@media only screen and (max-width: 1200px) {
+		.box-right .box{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+ }

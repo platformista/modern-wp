@@ -1,0 +1,78 @@
+#tc-send-feedback {
+	.main {
+		padding: 1em;
+		position: relative;
+
+		.description {
+			margin: 0;
+
+			p {
+				margin-top: 0;
+			}
+		}
+
+		label {
+			display: block;
+
+			&:not(:last-child) {
+				margin-bottom: 1em;
+			}
+		}
+
+		.content {
+			textarea {
+				padding: 1em;
+			}
+		}
+
+		.email {
+			span {
+				margin-bottom: 5px;
+				display: block;
+			}
+
+			input {
+				padding: 0.5em;
+			}
+		}
+	}
+
+	.footer {
+		.messages {
+			display: none;
+			float: right;
+			line-height: 3em;
+			opacity: 0;
+			transition: all 300ms ease-out;
+		}
+	}
+
+	.complete {
+		.footer {
+			.messages {
+				display: inline-block;
+				opacity: 1;
+			}
+		}
+	}
+
+	.failed {
+		.footer {
+			.messages {
+				color: #F44336;
+			}
+		}
+	}
+
+	.success {
+		.footer {
+			.messages {
+				color: #4CAF50;
+			}
+		}
+	}
+}
+
+.tc-btn-send-feedback {
+	color: #0073aa;
+}

@@ -1,0 +1,15 @@
+.thim-manager-sidebar .thim-table tbody th,
+.thim-manager-sidebar .thim-table tbody td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.widgets-sortables {
+	position: relative;
+}
+
+.thim-btn-remove-sidebar {
+	position: absolute;
+	top: 10px;
+	right: 50px;
+}
