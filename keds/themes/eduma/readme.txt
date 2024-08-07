@@ -1,2 +1,0 @@
-/* EDUMA VERSION 3.0.7 */
-

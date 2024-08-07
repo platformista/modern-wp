@@ -1,9 +1,9 @@
 applications:
     # The name of this app. Must be unique within a project.
-    keds:
+    gg:
         # Where the app is located on the filesystem.
         source:
-            root: "keds"
+            root: "gg"
 
         # The runtime the application uses.
         type: "php:8.3"
@@ -29,7 +29,7 @@ applications:
         # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
         # side is in the form `<service name>:<endpoint name>`.
         relationships:
-            database: 'kedsdb:mysql'
+            database: 'ggdb:mysql'
             rediscache: 'redis:redis'
             essearch: 'es:elasticsearch'
 
@@ -82,7 +82,7 @@ applications:
                 source_path: "wp-cloudflare-page-cache"
 
 services:
-    kedsdb:
+    ggdb:
         type: mariadb:11.2
 
     redis:
@@ -96,9 +96,9 @@ routes:
     # Each route describes how an incoming URL is going
     # to be processed by Upsun.
 
-    "https://www.keds.com/":
+    "https://gratia.gratis/":
         type: upstream
-        upstream: "keds:http"
+        upstream: "gg:http"
         cache:
             enabled: true
             # Base the cache on the session cookies. Ignore all other cookies.
@@ -109,6 +109,6 @@ routes:
                 - "/^wp-settings-/"
                 - "/^wp-postpass/"
 
-    "https://keds.com/":
+    "https://www.gratia.gratis/":
         type: redirect
-        to: "https://www.keds.com/"
+        to: "https://gratia.gratis/"

@@ -1,0 +1,104 @@
+{
+	"name": "johnpbloch/wordpress",
+	"description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+	"keywords": [
+		"wordpress",
+		"blog",
+		"cms"
+	],
+	"type": "package",
+	"homepage": "http://wordpress.org/",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "WordPress Community",
+			"homepage": "http://wordpress.org/about/"
+		}
+	],
+	"support": {
+		"issues": "http://core.trac.wordpress.org/",
+		"forum": "http://wordpress.org/support/",
+		"wiki": "http://codex.wordpress.org/",
+		"irc": "irc://irc.freenode.net/wordpress",
+		"source": "http://core.trac.wordpress.org/browser"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		},
+		{
+			"type": "path",
+			"url": "themes/*",
+			"options": {
+				"symlink": false
+			}
+		},
+		{
+			"type": "path",
+			"url": "plugins/*",
+			"options": {
+				"symlink": false
+			}
+		}
+	],
+	"require": {
+		"php": ">=8.0",
+		"johnpbloch/wordpress-core-installer": "^2.0",
+		"johnpbloch/wordpress-core": "^6.0.0",
+		"platformsh/config-reader": "^2.3",
+		"wpackagist-plugin/akismet": "^5.0",
+		"wpackagist-plugin/jetpack": "^12.0",
+		"wpackagist-plugin/really-simple-ssl": "^7.0.1",
+		"wpackagist-plugin/wordpress-importer": "^0.8",
+		"wpackagist-plugin/contextual-category-widget": "^0.6.1",
+		"wpackagist-plugin/social-pug": "^1.7.0",
+		"wpackagist-plugin/series": "^2.0.1",
+		"wpackagist-plugin/wpforms-lite": "^1.6.0.2",
+		"wpackagist-plugin/wp-cloudflare-page-cache": "4.7.2",
+		"wpackagist-plugin/redis-cache": "^2.0.2",
+		"wpackagist-plugin/elasticpress": "^4.0.1"
+	},
+	"distro": {
+		"default-theme": "eduma",
+		"enable-plugins": [
+			"akismet",
+			"contextual-category-widget",
+			"elasticpress",
+			"jetpack",
+			"really-simple-ssl",
+			"redis-cache",
+			"series",
+			"social-pug",
+			"thim-core",
+			"wp-cloudflare-page-cache",
+			"wpforms-lite"
+		]
+	},
+	"scripts": {
+		"postbuild": [
+			"mv wp-config.php wordpress/",
+			"rm -rf wordpress/wp-content/themes/hello.php"
+		],
+		"post-install-cmd": "@postbuild"
+	},
+	"extra": {
+		"installer-paths": {
+			"wordpress/wp-content/plugins/{$name}": [
+				"type:wordpress-plugin"
+			],
+			"wordpress/wp-content/themes/{$name}": [
+				"type:wordpress-theme"
+			],
+			"wordpress/wp-content/mu-plugins/{$name}": [
+				"type:wordpress-muplugin"
+			]
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"johnpbloch/wordpress-core-installer": true
+		}
+	}
+}
