@@ -26,20 +26,6 @@
 		{
 			"type": "composer",
 			"url": "https://wpackagist.org"
-		},
-		{
-			"type": "path",
-			"url": "themes/*",
-			"options": {
-				"symlink": false
-			}
-		},
-		{
-			"type": "path",
-			"url": "plugins/*",
-			"options": {
-				"symlink": false
-			}
 		}
 	],
 	"require": {
@@ -51,7 +37,6 @@
 		"wpackagist-plugin/jetpack": "^12.0",
 		"wpackagist-plugin/really-simple-ssl": "^7.0.1",
 		"wpackagist-plugin/wordpress-importer": "^0.8",
-		"wpackagist-plugin/contextual-category-widget": "^0.6.1",
 		"wpackagist-plugin/social-pug": "^1.7.0",
 		"wpackagist-plugin/series": "^2.0.1",
 		"wpackagist-plugin/wpforms-lite": "^1.6.0.2",
