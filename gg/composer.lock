@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6135239c50b656933d049befb1c90a36",
+    "content-hash": "5d80913736c730cd3bc4acc31a9d50f3",
     "packages": [
         {
             "name": "composer/installers",
@@ -352,6 +352,24 @@
             "homepage": "https://wordpress.org/plugins/jetpack/"
         },
         {
+            "name": "wpackagist-plugin/polylang",
+            "version": "3.6.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/polylang/",
+                "reference": "tags/3.6.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.3.6.4.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/polylang/"
+        },
+        {
             "name": "wpackagist-plugin/really-simple-ssl",
             "version": "8.1.6",
             "source": {
@@ -488,5 +506,5 @@
         "php": ">=8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
