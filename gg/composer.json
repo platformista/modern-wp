@@ -40,7 +40,7 @@
 		"wpackagist-plugin/social-pug": "^1.7.0",
 		"wpackagist-plugin/series": "^2.0.1",
 		"wpackagist-plugin/wpforms-lite": "^1.6.0.2",
-		"wpackagist-plugin/wp-cloudflare-page-cache": "5.0.2",
+		"wpackagist-plugin/wp-cloudflare-page-cache": "5.0.3",
 		"wpackagist-plugin/redis-cache": "^2.0.2",
 		"wpackagist-plugin/elasticpress": "^5.1.3",
 		"wpackagist-plugin/polylang": "^3.6"
