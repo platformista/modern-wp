@@ -43,20 +43,20 @@
 		"wpackagist-plugin/wp-cloudflare-page-cache": "5.0.5",
 		"wpackagist-plugin/redis-cache": "^2.0.2",
 		"wpackagist-plugin/elasticpress": "^5.1.3",
-		"wpackagist-plugin/polylang": "^3.6"
+		"wpackagist-plugin/polylang": "^3.6",
+		"wpackagist-plugin/charitable": "^1.8"
 	},
 	"distro": {
-		"default-theme": "eduma",
+		"default-theme": "twentytwentyfour",
 		"enable-plugins": [
 			"akismet",
-			"contextual-category-widget",
+			"charitable",
 			"elasticpress",
-			"jetpack",
+			"polylang",
 			"really-simple-ssl",
 			"redis-cache",
 			"series",
 			"social-pug",
-			"thim-core",
 			"wp-cloudflare-page-cache",
 			"wpforms-lite"
 		]
@@ -84,7 +84,8 @@
 	"config": {
 		"allow-plugins": {
 			"composer/installers": true,
-			"johnpbloch/wordpress-core-installer": true
+			"johnpbloch/wordpress-core-installer": true,
+			"inpsyde/wp-translation-downloader": true
 		}
 	}
 }

@@ -12,6 +12,11 @@ if ! wp core is-installed; then
 		wp plugin activate ${PLUGIN}
 	done
 else
+	# Go through the list of plugins to activate new plugins.
+	# Plugin previously activated will stay active. 
+	while read PLUGIN; do
+		wp plugin activate ${PLUGIN}
+	done
 	# Flushes the object cache which might have changed between current production and newly deployed changes
 	wp cache flush
 	# Runs the WordPress database update procedure in case core is being updated with the newly deployed changes
