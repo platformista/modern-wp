@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "053975e3e6d526d6c4f8b8e22b804c80",
+    "content-hash": "0acb648fd7bb5a3956c9688c334a61db",
     "packages": [
         {
             "name": "composer/installers",
@@ -312,20 +312,20 @@
         },
         {
             "name": "platformsh/config-reader",
-            "version": "2.4.1",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/platformsh/config-reader-php.git",
-                "reference": "dc08f50f5a40a767457668ad154116c8ea89cfc6"
+                "reference": "cab2b6c0cdfc318df09a64136957dc1fc308f418"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/platformsh/config-reader-php/zipball/dc08f50f5a40a767457668ad154116c8ea89cfc6",
-                "reference": "dc08f50f5a40a767457668ad154116c8ea89cfc6",
+                "url": "https://api.github.com/repos/platformsh/config-reader-php/zipball/cab2b6c0cdfc318df09a64136957dc1fc308f418",
+                "reference": "cab2b6c0cdfc318df09a64136957dc1fc308f418",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2"
+                "php": ">=7.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5"
@@ -349,9 +349,9 @@
             "description": "Small helper to access Platform.sh environment variables",
             "support": {
                 "issues": "https://github.com/platformsh/config-reader-php/issues",
-                "source": "https://github.com/platformsh/config-reader-php/tree/2.4.1"
+                "source": "https://github.com/platformsh/config-reader-php/tree/3.0.1"
             },
-            "time": "2023-09-14T17:07:00+00:00"
+            "time": "2025-02-25T17:22:15+00:00"
         },
         {
             "name": "wpackagist-plugin/akismet",
