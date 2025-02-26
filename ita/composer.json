@@ -36,7 +36,7 @@
 	"wpackagist-theme/lovecraft": "2.1.1",
 	"wpackagist-plugin/akismet": "^5.0",
 	"wpackagist-plugin/jetpack": "^14.3",
-	"wpackagist-plugin/really-simple-ssl": "^7.0.1",
+	"wpackagist-plugin/really-simple-ssl": "^9.3.1",
 	"wpackagist-plugin/wordpress-importer": "^0.8",
 	"wpackagist-plugin/contextual-category-widget": "^0.6.1",
 	"wpackagist-plugin/social-pug": "^1.7.0",
