@@ -317,15 +317,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "14.6",
+            "version": "14.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/14.6"
+                "reference": "tags/14.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.14.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.14.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
