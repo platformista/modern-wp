@@ -541,15 +541,15 @@
         },
         {
             "name": "wpackagist-plugin/wpforms-lite",
-            "version": "1.9.6.2",
+            "version": "1.9.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
-                "reference": "tags/1.9.6.2"
+                "reference": "tags/1.9.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.9.6.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.9.7.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
