@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37c9bd0db08627b04dc8857234159ff6",
+    "content-hash": "3a9553c285aa3af83aef920c96fdf8da",
     "packages": [
         {
             "name": "composer/installers",
@@ -523,15 +523,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-cloudflare-page-cache",
-            "version": "5.1.4",
+            "version": "5.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-cloudflare-page-cache/",
-                "reference": "tags/5.1.4"
+                "reference": "tags/5.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.5.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-cloudflare-page-cache.5.1.5.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
