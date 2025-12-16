@@ -389,15 +389,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-search-with-algolia",
-            "version": "2.11.0",
+            "version": "2.11.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-search-with-algolia/",
-                "reference": "tags/2.11.0"
+                "reference": "tags/2.11.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.2.11.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.2.11.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
