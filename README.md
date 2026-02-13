@@ -1,3 +1,6 @@
+<img width="1200" height="630" alt="default_social" src="https://github.com/user-attachments/assets/7a12fa09-656f-44d6-a72d-5570067775f4" />
+
+
 ## WordPress on Upsun
 
 Upsun provide an incredibly flexible and powerful PaaS. As they once called it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a preview environment cloned from your a parent environment (the root of the tree is usually the production environment) for each pull request, and a Status Check that runs a build on Upsun out of the new branch, so to verify that the changes do not break anything. Upon merging a PR, the code is deployed straight to the parent environment. And you can change the infrastructure in code, too.
