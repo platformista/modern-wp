@@ -1,11 +1,20 @@
-<p align="center"><a href="https://console.platform.sh/projects/create-project/?template=https://github.com/vincenzo/modern-wp/blob/master/template-definition.yaml&utm_campaign=deploy_on_platform?utm_medium=button&utm_source=affiliate_links&utm_content=https://github.com/vincenzo/modern-wp/blob/master/template-definition.yaml" target="_blank" title="Deploy with Platform.sh"><img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg"></a></p>
+## WordPress on Upsun
+
+Upsun provide an incredibly flexible and powerful PaaS. As they once called it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a preview environment cloned from your a parent environment (the root of the tree is usually the production environment) for each pull request, and a Status Check that runs a build on Upsun out of the new branch, so to verify that the changes do not break anything. Upon merging a PR, the code is deployed straight to the parent environment. And you can change the infrastructure in code, too.
+
+To deploy this repository on Upsun: 
+
+1. make a copy or a fork of it
+1. [create a new project](https://console.upsun.com/vinnie-1/create-project) on Upsun (requires an account)
+1. select 'Sync your GitHub repository with Upsun'
+1. select the repository as per #1
 
 # Modern WordPress development and deployment workflow
 
 This repository hosts the codebase for two sites, both
 
 - are built using [WordPress.org](https://wordpress.org)
-- are deployed on [Platform.sh](https://platform.sh) in [Multi-App setup](https://docs.platform.sh/configuration/app/multi-app.html)
+- are deployed on [Upsun](https://upsun.com) in [Multi-App setup](https://docs.upsun.com/create-apps/multi-app.html)
 - have their codebase managed via [Composer](https://getcomposer.org), thanks to [`johnpbloch/wordpress`](https://github.com/johnpbloch/wordpress) and [WordPress Packagist](https://wpackagist.org)
 - have their dependencies automatically upgraded by [Dependabot](https://dependabot.com)
 - have their Dependabot PRs automatically merged by [Mergify](https://mergify.io) when builds pass
@@ -22,19 +31,6 @@ In addition to the above:
 ## WordPress
 
 WordPress remains by far the CMS that is easiest to adopt, and that provides a fast time to market in the majority of use cases. There is so much high quality stuff out there for WordPress, be it OSS or Premium, that one can have beautiful sites powered by an easy-to-use CMS up and running in no time.
-
-## Platform.sh
-
-Platform.sh provide an incredibly flexible and powerful PaaS. As they like to call it, it is the Idea-to-Cloud PaaS. With a GitHub integration, you can have a child environment cloned from your a parent environment (the root of the tree is usually the production environment) for each pull request, and a Status Check that runs a build on Platform.sh out of the new branch, so to verify that the changes do not break anything. Upon merging a PR, the code is deployed straight to the parent environment.
-
-## Upsun
-
-As of April 2024, this template also supports [Upsun](https://www.upsun.com), the new offering by Platform.sh
-
-Feel free to poke around the Upsun configuration, too. 
-
-Bear in mind, however, that the "deploy button" you find at the top of this file only works with Platform.sh.
-If you want to deploy this repository to your Upsun account, make sure to fork this repo and then connect your GitHub account to your Upsun one. 
 
 ## Dependabot
 
