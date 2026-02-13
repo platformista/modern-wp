@@ -22,6 +22,6 @@ jobs:
           curl -fsSL https://raw.githubusercontent.com/platformsh/cli/main/installer.sh | VENDOR=upsun bash
           echo "/home/runner/.global/bin" >> $GITHUB_PATH
       - name: Run backup
-        run: upsun backup:create -W -p ${{secrets.PLATFORMSH_PROJECT}} master
+        run: upsun backup:create -W -p ${{secrets.UPSUN_PROJECT}} master
         env:
-          PLATFORMSH_CLI_TOKEN: ${{secrets.PLATFORMSH_CLI_TOKEN}}
+          UPSUN_CLI_TOKEN: ${{secrets.UPSUN_CLI_TOKEN}}
