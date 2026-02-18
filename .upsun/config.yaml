@@ -6,7 +6,7 @@ applications:
             root: "eng"
 
         # The runtime the application uses.
-        type: "php:8.3"
+        type: "php:8.5"
 
         # Configuration of the build of the application.
         build:
@@ -79,7 +79,7 @@ applications:
             root: "ita"
 
         # The runtime the application uses.
-        type: "php:8.3"
+        type: "php:8.5"
 
         runtime:
             extensions:
@@ -159,13 +159,13 @@ services:
     # Each service listed will be deployed
     # to power your Upsun project.
     engdb:
-        type: mariadb:11.2
+        type: mariadb:11.8
 
     itadb:
-        type: mariadb:11.2
+        type: mariadb:11.8
 
     redis:
-        type: redis:7.2
+        type: redis:8.0
 
     es:
         type: elasticsearch:7.10
