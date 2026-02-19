@@ -45,26 +45,26 @@ This service, too, provides a free plan for public repositories. You can configu
 
 ## Redis
 
-Redis is an open source, in-memory data structure store, that here I use as a back-end cache system via the [Redis Object Cache](https://wordpress.org/plugins/redis-cache/) plugin. It is [easy to adopt with Platform.sh](https://docs.platform.sh/configuration/services/redis.html), as it is one of the many containeresed services that you can add to your project.
+Redis is an open source, in-memory data structure store, that here I use as a back-end cache system via the [Redis Object Cache](https://wordpress.org/plugins/redis-cache/) plugin. It is [easy to adopt with Upsun](https://docs.upsun.com/add-services/redis.html), as it is one of the many containeresed services that you can add to your project.
 
 ## Cloudflare
 
-Cloudflare is one of the CDNs best [supported by Platform.sh](https://docs.platform.sh/domains/cdn.html); it is also one that provides a good free plan.
+Cloudflare is one of the CDNs best [supported by Upsun](https://docs.upsun.com/domains/cdn/cloudflare.html); it is also one that provides a good free plan.
 When you combine that with the awesome plugin [WP Cloudflare Super Page Cache](https://wordpress.org/plugins/wp-cloudflare-page-cache/), choosing Cloudflare for your personal sites becomes really a no-brainer.
 
 ## WordPress translation files and Composer
 
-One of the sites is not in English and uses translation files for WordPress core, themes, and plugins for an optimal setup. WordPress Packagist does not currently provide such files, but—–thankfully–—the OSS community never rests, and [`inpsyde/wp-translation-downloader`](https://github.com/inpsyde/wp-translation-downloader) is a great Composer plugin to manage WordPress translations.
+One of the sites is not in English and uses translation files for WordPress core, themes, and plugins for an optimal setup. WordPress Packagist does not currently provide such files, but—–thankfully–—the FOSS community never rests, and [`inpsyde/wp-translation-downloader`](https://github.com/inpsyde/wp-translation-downloader) is a great Composer plugin to manage WordPress translations.
 
 ## GitHub Actions
 
-It seemed like the obvious choice. Currently no particular CI/CD task is implemented, as Platform.sh provide their own built-in CI/CD for builds and deployments. Moreover, I do not require particular testing at present, so I am not using Actions for that either. However, I am using it as Cron Scheduler, to perform regular tasks on my Platform.sh project.
+It seemed like the obvious choice. Currently no particular CI/CD task is implemented, as Upsun provide their own built-in CI/CD for builds and deployments. Moreover, I do not require particular testing at present, so I am not using Actions for that either. However, I am using it as Cron Scheduler, to perform regular tasks on my Upsun project.
 
-Although Platform.sh allow you to do that by defining Cron Jobs [on their own platform](https://docs.platform.sh/configuration/app/cron.html), I chose to have this functionality decoupled from Platform.sh.
+Although Upsun allow you to do that by defining Cron Jobs [on their own platform](https://docs.upsun.com/create-apps/image-properties/crons.html), I chose to have this functionality decoupled.
 
 ## Elasticsearch
 
-[Elasticsearch](https://www.elastic.co/elasticsearch/) is a distributed, RESTful search and analytics engine that centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease. [Platform.sh allows a very easy adoption of the service](https://docs.platform.sh/configuration/services/elasticsearch.html). [ElasticPress](https://github.com/10up/ElasticPress) provides a seamless integration with WordPress.
+[Elasticsearch](https://www.elastic.co/elasticsearch/) is a distributed, RESTful search and analytics engine that centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease. [Upsun allows a very easy adoption of the service](https://docs.upsun.com/add-services/elasticsearch.html). [ElasticPress](https://github.com/10up/ElasticPress) provides a seamless integration with WordPress.
 
 ## Algolia
 
@@ -72,8 +72,8 @@ Although Platform.sh allow you to do that by defining Cron Jobs [on their own pl
 
 ## Rudimentary "distro" support for WordPress
 
-"Distros" or "install profiles" are essentially a way to have your own default installation configuration. Whilst [some softwares have built-in support](https://www.drupal.org/docs/drupal-distributions) for that, WordPress does not. Our rudimentary support for this in WordPress relies on two things: a [bespoke section](https://github.com/vincenzo/modern-wp/commit/e82203270889a769bef1a9d2e72f8cf060e213a9#diff-09041310fc9f9e3a7f23395f30f37f8b89818edcb546ae0d411054a11113e415R51-R66) in the `composer.json` file and [a script](https://github.com/vincenzo/modern-wp/blob/master/ita/scripts/deploy.sh) that uses the information in that section to perform some initial setup. The script is then executed as [part of the `deploy` hook](https://github.com/vincenzo/modern-wp/blob/master/ita/.platform.app.yaml#L20) in Platform.sh. If you are wondering why we didn't simply use the `scripts.postbuild` section in `composer.json` to run such a script, the reason is that during the `build` phase in Platform.sh (when `composer` is run) the database service is not yet available.
+"Distros" or "install profiles" are essentially a way to have your own default installation configuration. Whilst [some softwares have built-in support](https://www.drupal.org/docs/drupal-distributions) for that, WordPress does not. Our rudimentary support for this in WordPress relies on two things: a [bespoke section](https://github.com/vincenzo/modern-wp/commit/e82203270889a769bef1a9d2e72f8cf060e213a9#diff-09041310fc9f9e3a7f23395f30f37f8b89818edcb546ae0d411054a11113e415R51-R66) in the `composer.json` file and [a script](https://github.com/vincenzo/modern-wp/blob/master/ita/scripts/deploy.sh) that uses the information in that section to perform some initial setup. The script is then executed as [part of the `deploy` hook](https://github.com/vincenzo/modern-wp/blob/master/ita/.platform.app.yaml#L20) in Upsun. If you are wondering why we didn't simply use the `scripts.postbuild` section in `composer.json` to run such a script, the reason is that during the `build` phase in Upsun (when `composer` is run) the database service is not yet available.
 
 ## Jetpack's identity crisis averted
 
-You may know that Jetpack can suffer from [identity crisis](https://jetpack.com/support/safe-mode/#what-is-an-identity-crisis). This template is configured so that non-production environments on Platform.sh automatically adopt [Offline Mode](https://jetpack.com/support/development-mode/), thus averting the identity crisis. It would've been preferable to use [Staging Mode](https://jetpack.com/support/staging-sites/) instead of Offline Mode, but it turns out—after a long chat with WordPress support—that just adding `define( 'JETPACK_STAGING_MODE', true );` to `wp-config.php` for a site that already has an active production connection to Jetpack doesn't actually put that site in Safe Mode automatically as described, but still causes the identity crisis.
+You may know that Jetpack can suffer from [identity crisis](https://jetpack.com/support/safe-mode/#what-is-an-identity-crisis). This template is configured so that non-production environments on Upsun automatically adopt [Offline Mode](https://jetpack.com/support/development-mode/), thus averting the identity crisis. It would've been preferable to use [Staging Mode](https://jetpack.com/support/staging-sites/) instead of Offline Mode, but it turns out—after a long chat with WordPress support—that just adding `define( 'JETPACK_STAGING_MODE', true );` to `wp-config.php` for a site that already has an active production connection to Jetpack doesn't actually put that site in Safe Mode automatically as described, but still causes the identity crisis.
