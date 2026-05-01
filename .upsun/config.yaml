@@ -23,6 +23,7 @@ applications:
         # side is in the form `<service name>:<endpoint name>`.
         relationships:
             database: "engdb:mysql"
+            essearch: 'es2:elasticsearch'
 
         # The configuration of app when it is exposed to the web.
         web:
@@ -168,6 +169,9 @@ services:
         type: redis:8.0
 
     es:
+        type: elasticsearch:7.10
+
+    es2:
         type: elasticsearch:7.10
 
 routes:
