@@ -38,7 +38,7 @@
 	"wpackagist-plugin/jetpack": "^16.0",
 	"wpackagist-plugin/really-simple-ssl": "^9.3.1",
 	"wpackagist-plugin/wordpress-importer": "^0.9",
-	"wpackagist-plugin/contextual-category-widget": "^0.6.1",
+	"wpackagist-plugin/contextual-category-widget": "^0.7.0",
 	"wpackagist-plugin/social-pug": "^1.7.0",
 	"wpackagist-plugin/series": "^2.0.1",
 	"wpackagist-plugin/wpforms-lite": "^2.0.0.2",

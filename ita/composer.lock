@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9415d2beea825c2e92b19d70ad489003",
+    "content-hash": "d6e54b0558fac3a640a19369f04b987f",
     "packages": [
         {
             "name": "composer/installers",
@@ -379,15 +379,15 @@
         },
         {
             "name": "wpackagist-plugin/contextual-category-widget",
-            "version": "0.6.1",
+            "version": "0.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contextual-category-widget/",
-                "reference": "tags/0.6.1"
+                "reference": "tags/0.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contextual-category-widget.0.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/contextual-category-widget.0.7.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
