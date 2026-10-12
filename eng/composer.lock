@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf49aaf4652cd3f585346b94686f0458",
+    "content-hash": "c55cb3b268b548b7c071dee712d14394",
     "packages": [
         {
             "name": "composer/installers",
@@ -389,15 +389,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-search-with-algolia",
-            "version": "2.13.1",
+            "version": "3.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-search-with-algolia/",
-                "reference": "tags/2.13.1"
+                "reference": "tags/3.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.2.13.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.3.0.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
